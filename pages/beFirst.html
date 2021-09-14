@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesAndAnims/style.css">
+    <link rel="stylesheet" href="/stylesAndAnims/anim.css">
+</head>
+
+<body>
+    <main id="beFirst">
+        <h2 class="h2beFirstEnterAnim">Fais partie des 1500 premiers inscrits<br> pour obtenir ton badge<br> exclusif
+            précurseur.</h2>
+
+        <img id="bckGrndImgBefirs1" class="imgBefirstEnterTop" src="/ressources/img/beFirstImg/1.png" alt="">
+        <img id="bckGrndImgBefirs2" class="imgBefirstEnterTop" src="/ressources/img/beFirstImg/2.png" alt="">
+        <!-- <img id="bckGrndImgBefirs3" src="/ressources/img/beFirstImg/3.png" alt=""> -->
+        <img id="bckGrndImgBefirs4" class="imgBefirstEnterTop" src="/ressources/img/beFirstImg/4.png" alt="">
+        <img id="bckGrndImgBefirs5" class="imgBefirstEnterTop" src="/ressources/img/beFirstImg/5.png" alt="">
+
+        <img id="bckGrndImgBefirs6" class="imgBefirstEnterBottom" src="/ressources/img/beFirstImg/6.png" alt="">
+        <img id="bckGrndImgBefirs7" class="imgBefirstEnterBottom" src="/ressources/img/beFirstImg/7.png" alt="">
+        <!-- <img id="bckGrndImgBefirs8" src="/ressources/img/beFirstImg/8.png" alt=""> -->
+        <img id="bckGrndImgBefirs9" class="imgBefirstEnterBottom" src="/ressources/img/beFirstImg/9.png" alt="">
+        <img id="bckGrndImgBefirs10" class="imgBefirstEnterBottom" src="/ressources/img/beFirstImg/10.png" alt="">
+    </main>
+
+    <script>
+        setTimeout(function () {
+            let bckGrndImgBefirs1 = document.getElementById("bckGrndImgBefirs1");
+            let bckGrndImgBefirs2 = document.getElementById("bckGrndImgBefirs2");
+
+            let bckGrndImgBefirs4 = document.getElementById("bckGrndImgBefirs4");
+            let bckGrndImgBefirs5 = document.getElementById("bckGrndImgBefirs5");
+
+
+            let bckGrndImgBefirs6 = document.getElementById("bckGrndImgBefirs6");
+            let bckGrndImgBefirs7 = document.getElementById("bckGrndImgBefirs7");
+
+            let bckGrndImgBefirs9 = document.getElementById("bckGrndImgBefirs9");
+            let bckGrndImgBefirs10 = document.getElementById("bckGrndImgBefirs10");
+
+            bckGrndImgBefirs1.classList.remove("imgBefirstEnterTop");
+            bckGrndImgBefirs1.classList.add("imgBefirstAnim1");
+            bckGrndImgBefirs2.classList.remove("imgBefirstEnterTop");
+            bckGrndImgBefirs2.classList.add("imgBefirstAnim2");
+            bckGrndImgBefirs4.classList.remove("imgBefirstEnterTop");
+            bckGrndImgBefirs4.classList.add("imgBefirstAnim1");
+            bckGrndImgBefirs5.classList.remove("imgBefirstEnterTop");
+            bckGrndImgBefirs5.classList.add("imgBefirstAnim2");
+
+
+            bckGrndImgBefirs6.classList.remove("imgBefirstEnterBottom");
+            bckGrndImgBefirs6.classList.add("imgBefirstAnim2");
+            bckGrndImgBefirs7.classList.remove("imgBefirstEnterBottom");
+            bckGrndImgBefirs7.classList.add("imgBefirstAnim1");
+            bckGrndImgBefirs9.classList.remove("imgBefirstEnterBottom");
+            bckGrndImgBefirs9.classList.add("imgBefirstAnim2");
+            bckGrndImgBefirs10.classList.remove("imgBefirstEnterBottom");
+            bckGrndImgBefirs10.classList.add("imgBefirstAnim1");
+            setTimeout(function () {
+                let h2 = document.querySelector("#beFirst h2");
+
+
+                h2.classList.remove("h2beFirstEnterAnim");
+                h2.classList.add("h2beFirstLeaveAnim");
+
+                bckGrndImgBefirs1.classList.remove("imgBefirstAnim1");
+                bckGrndImgBefirs1.classList.add("imgBefirstLeaveTop");
+                bckGrndImgBefirs2.classList.remove("imgBefirstAnim2");
+                bckGrndImgBefirs2.classList.add("imgBefirstLeaveTop");
+                bckGrndImgBefirs4.classList.remove("imgBefirstAnim1");
+                bckGrndImgBefirs4.classList.add("imgBefirstLeaveTop");
+                bckGrndImgBefirs5.classList.remove("imgBefirstAnim2");
+                bckGrndImgBefirs5.classList.add("imgBefirstLeaveTop");
+
+
+                bckGrndImgBefirs6.classList.remove("imgBefirstAnim2");
+                bckGrndImgBefirs6.classList.add("imgBefirstLeaveBottom");
+                bckGrndImgBefirs7.classList.remove("imgBefirstAnim1");
+                bckGrndImgBefirs7.classList.add("imgBefirstLeaveBottom");
+                bckGrndImgBefirs9.classList.remove("imgBefirstAnim2");
+                bckGrndImgBefirs9.classList.add("imgBefirstLeaveBottom");
+                bckGrndImgBefirs10.classList.remove("imgBefirstAnim1");
+                bckGrndImgBefirs10.classList.add("imgBefirstLeaveBottom");
+                setTimeout(function () {
+                    location.href = "enterInGame.html";
+                }, 1000);
+            }, 4000);
+        }, 1000);
+    </script>
+</body>
+
+</html>

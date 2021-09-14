@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesAndAnims/style.css">
+    <link rel="stylesheet" href="/stylesAndAnims/anim.css">
+</head>
+
+<body>
+    <main id="newSocialNetwork">
+        <h2 class="h2newSocialNetworkEnterAnim">le nouveau <span>réseau social</span><br> conçu pour toi, avec toi</h2>
+    </main>
+</body>
+
+<script>
+    setTimeout(function () {
+        let h2 = document.querySelector("#newSocialNetwork h2");
+        h2.classList.remove("h2newSocialNetworkEnterAnim");
+        h2.classList.add("h2newSocialNetworkLeaveAnim");
+        setTimeout(function () {
+            location.href = "passion.html";
+        }, 1000);
+    }, 4000);
+</script>
+
+</html>

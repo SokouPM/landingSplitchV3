@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesAndAnims/tags.css">
+</head>
+
+<body>
+    <main>
+        <div class="tags">
+            <p class="third">Mélomane</p>
+            <p class="first">Big dreamer</p>
+            <p class="third">Planet I care</p>
+            <p class="second">Spiritualité</p>
+            <p class="fourth">Sneakers Addict</p>
+            <p class="first">LGBTQ+</p>
+            <p class="fourth">Street food</p>
+            <p class="fourth">Sorties</p>
+            <p class="second">Gamer</p>
+            <p class="first">Fan de chien</p>
+            <p class="fourth">Passion pizza</p>
+            <p class="second">Engagée</p>
+            <p class="fourth">Concert</p>
+            <p class="second">Dance</p>
+            <p class="first">Netflix</p>
+            <p class="third">Astrologie</p>
+            <p class="fourth">Jeux de rôle</p>
+            <p class="first">Cinéphile</p>
+            <p class="fourth">Mélomane</p>
+            <p class="first">Big dreamer</p>
+            <p class="third">Planet I care</p>
+            <p class="second">Spiritualité</p>
+            <p class="fourth">Sneakers Addict</p>
+            <p class="third">LGBTQ+</p>
+            <p class="second">Street food</p>
+            <p class="first">Sorties</p>
+            <p class="third">Gamer</p>
+            <p class="fourth">Fan de chien</p>
+            <p class="second">Passion pizza</p>
+            <p class="second">Sport extrêmes</p>
+            <p class="first">Engagée</p>
+            <p class="third">Concert</p>
+            <p class="fourth">Dance</p>
+            <p class="second">Netflix</p>
+            <p class="third">Astrologie</p>
+            <p class="third">Jeux de rôle</p>
+            <p class="first">Cinéphile</p>
+            <p class="fourth">Mélomane</p>
+            <p class="fourth">Big dreamer</p>
+            <p class="second">Planet I care</p>
+            <p class="fourth">Spiritualité</p>
+            <p class="first">Sneakers Addict</p>
+            <p class="fourth">LGBTQ+</p>
+            <p class="second">Street food</p>
+            <p class="first">Sorties</p>
+            <p class="fourth">Gamer</p>
+            <p class="first">Fan de chien</p>
+            <p class="third">Passion pizza</p>
+            <p class="first">Engagée</p>
+            <p class="fourth">Concert</p>
+            <p class="second">Dance</p>
+            <p class="third">Netflix</p>
+            <p class="second">Astrologie</p>
+            <p class="first">Jeux de rôle</p>
+            <p class="third">Cinéphile</p>
+        </div>
+        <div id="wthBtn" class="buttonEntrance">
+            <div id="bordBtn">
+                <a href="pages/weSplitch.html" id="innerBtn">Choisir</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        const tags = document.querySelectorAll('.tags p');
+        const eventActivation = 270;
+
+        window.onscroll = function () {
+
+            let eventPos = $(document).scrollTop();
+
+            for (let i = 0; i < tags.length; i++) {
+
+                if (eventPos < eventActivation) {
+                    if (tags[i].classList.contains('appear')) {
+                        tags[i].classList.remove('appear');
+                        tags[i].classList.add('desappear');
+                    }
+                }
+                if (eventPos > eventActivation && eventPos < eventActivation * 2) {
+
+                    // FOR SCROLL DOWN //
+                    if (tags[i].classList.contains('first')) {
+                        tags[i].classList.remove('desappear');
+                        tags[i].classList.add('appear');
+                    }
+
+                    // FOR SCROLL UP //
+                    if (tags[i].classList.contains('second')) {
+                        if (tags[i].classList.contains('appear')) {
+                            tags[i].classList.add('desappear');
+                            tags[i].classList.remove('appear');
+                        }
+                    }
+                }
+                if (eventPos > eventActivation * 2 && eventPos < eventActivation * 3) {
+                    // FOR SCROLL DOWN //
+                    if (tags[i].classList.contains('second')) {
+                        tags[i].classList.add('appear');
+                        tags[i].classList.remove('desappear');
+                    }
+
+                    // FOR SCROLL UP //
+                    if (tags[i].classList.contains('third')) {
+                        if (tags[i].classList.contains('appear')) {
+                            tags[i].classList.add('desappear');
+                            tags[i].classList.remove('appear');
+                        }
+                    }
+                }
+                if (eventPos > eventActivation * 3 && eventPos < eventActivation * 4) {
+                    // FOR SCROLL DOWN //
+                    if (tags[i].classList.contains('third')) {
+                        tags[i].classList.add('appear');
+                        tags[i].classList.remove('desappear');
+                    }
+
+                    // FOR SCROLL UP //
+                    if (tags[i].classList.contains('fourth')) {
+                        if (tags[i].classList.contains('appear')) {
+                            tags[i].classList.add('desappear');
+                            tags[i].classList.remove('appear');
+                        }
+                    }
+                }
+                if (eventPos > eventActivation * 4) {
+                    tags[i].classList.remove('desappear');
+                    tags[i].classList.add('appear');
+                }
+            }
+        }
+
+        $('.tags').delegate('p', 'click', function () {
+            $(this).toggleClass('selectedTag');
+        });
+    </script>
+</body>
+
+</html>

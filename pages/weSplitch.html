@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesAndAnims/style.css">
+    <link rel="stylesheet" href="/stylesAndAnims/anim.css">
+</head>
+
+<body>
+    <main id="weSplitch">
+        <h2 class="h2weSplitchEnterAnim">nous c'est <span>splitch</span></h2>
+    </main>
+</body>
+
+<script>
+    setTimeout(function () {
+        let h2 = document.querySelector("#weSplitch h2");
+        h2.classList.remove("h2weSplitchEnterAnim");
+        h2.classList.add("h2weSplitchLeaveAnim");
+        setTimeout(function () {
+            location.href = "newSocialNetwork.html";
+        }, 1000);
+    }, 4000);
+</script>
+
+</html>

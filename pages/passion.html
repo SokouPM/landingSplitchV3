@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesAndAnims/style.css">
+    <link rel="stylesheet" href="/stylesAndAnims/anim.css">
+</head>
+
+<body>
+    <main id="passion">
+        <div id="ballon" class="ballonAnim"><img src="/ressources/img/basketball.png" alt="basketball"></div>
+        <div id="shadow"><img src="/ressources/img/ellipse.png" alt=""></div>
+        <h2 class="h2passionEnterAnim">pour partager tes <span>passions</span>.</h2>
+    </main>
+</body>
+
+<script>
+    setTimeout(function () {
+        let h2 = document.querySelector("#passion h2");
+        let ballon = document.getElementById("ballon");
+        let shadow = document.getElementById("shadow");
+
+        h2.classList.remove("h2passionEnterAnim");
+        h2.classList.add("h2passionLeaveAnim");
+        ballon.classList.remove("ballonAnim");
+        ballon.classList.add("elementLeave");
+        shadow.classList.add("elementLeave");
+        setTimeout(function () {
+            location.href = "emotion.html";
+        }, 1000);
+    }, 4000);
+</script>
+
+</html>

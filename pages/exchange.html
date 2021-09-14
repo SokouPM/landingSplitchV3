@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesAndAnims/style.css">
+    <link rel="stylesheet" href="/stylesAndAnims/anim.css">
+</head>
+
+<body>
+    <main id="exchange">
+        <h2 class="h2exchangeEnterAnim">échange, propose une sortie<br> ou lance un jeu.</h2>
+        <div id="iconsExchange">
+            <img id="exchangeImg1" class="exchangeImg1EntranceAnim" src="/ressources/img/manet.png" alt="">
+            <img id="exchangeImg2" class="exchangeImg2EntranceAnim" src="/ressources/img/dialog.png" alt="">
+            <img id="exchangeImg3" class="exchangeImg3EntranceAnim" src="/ressources/img/calendar.png" alt="">
+        </div>
+    </main>
+
+    <script>
+        setTimeout(function () {
+            let h2 = document.querySelector("#exchange h2");
+            let exchangeImg1 = document.getElementById("exchangeImg1");
+            let exchangeImg2 = document.getElementById("exchangeImg2");
+            let exchangeImg3 = document.getElementById("exchangeImg3");
+
+            h2.classList.remove("h2exchangeEnterAnim");
+            h2.classList.add("h2exchangeLeaveAnim");
+
+            exchangeImg1.classList.remove("exchangeImg1EntranceAnim");
+            exchangeImg1.classList.add("exchangeImg1LeaveAnim");
+
+            exchangeImg2.classList.remove("exchangeImg2EntranceAnim");
+            exchangeImg2.classList.add("exchangeImg2LeaveAnim");
+
+            exchangeImg3.classList.remove("exchangeImg32EntranceAnim");
+            exchangeImg3.classList.add("exchangeImg3LeaveAnim");
+            setTimeout(function () {
+                location.href = "beFirst.html";
+            }, 1000);
+        }, 4000);
+    </script>
+</body>
+
+</html>
