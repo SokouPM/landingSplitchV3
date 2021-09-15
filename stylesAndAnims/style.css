@@ -42,8 +42,6 @@
     height: 100vh;
     width: 100vw;
     position: relative;
-    outline: 1px solid #1C6EA4;
-    outline-offset: 0px;
 }
 
 h2 {
@@ -241,52 +239,89 @@ span {
 
 /******************************** beFirst Page ********************************/
 
-#bckGrndImgBefirs1 {
+.beFirstImg {
     position: absolute;
-    left: 20vw;
-    top: 10vh
+    opacity: 0.5;
+}
+
+#bckGrndImgBefirs1 {
+    top: 15vh;
+    left: 3vw
 }
 
 #bckGrndImgBefirs2 {
-    position: absolute;
-    left: 40vw;
-    top: 10vh;
+    top: 9vh;
+    left: 17vw
 }
 
 #bckGrndImgBefirs3 {
-    position: absolute;
-    right: 40vw;
-    top: 10vh;
+    top: 13vh;
+    left: 31vw
 }
 
 #bckGrndImgBefirs4 {
-    position: absolute;
-    right: 20vw;
-    top: 10vh;
+    top: 4vh;
+    left: 44vw
 }
 
 #bckGrndImgBefirs5 {
-    position: absolute;
-    left: 20vw;
-    bottom: 10vh;
+    top: 16vh;
+    right: 37vw;
 }
 
 #bckGrndImgBefirs6 {
-    position: absolute;
-    left: 40vw;
-    bottom: 10vh;
+    top: 4vh;
+    right: 28vw
 }
 
 #bckGrndImgBefirs7 {
-    position: absolute;
-    right: 40vw;
-    bottom: 10vh;
+    top: 17vh;
+    right: 18vw
 }
 
 #bckGrndImgBefirs8 {
-    position: absolute;
-    right: 20vw;
-    bottom: 10vh;
+    top: 11vh;
+    right: 5vw;
+}
+
+#bckGrndImgBefirs9 {
+    bottom: 28vh;
+    left: 5vw;
+}
+
+#bckGrndImgBefirs10 {
+    bottom: 15vh;
+    left: 17vw;
+}
+
+#bckGrndImgBefirs11 {
+    bottom: 12vh;
+    left: 29vw;
+}
+
+#bckGrndImgBefirs12 {
+    bottom: 8vh;
+    left: 40vw;
+}
+
+#bckGrndImgBefirs13 {
+    bottom: 11vh;
+    right: 44vw;
+}
+
+#bckGrndImgBefirs14 {
+    bottom: 14vh;
+    right: 33vw;
+}
+
+#bckGrndImgBefirs15 {
+    bottom: 11vh;
+    right: 23vw;
+}
+
+#bckGrndImgBefirs16 {
+    bottom: 28vh;
+    right: 8vw;
 }
 
 /******************************** enterInGame Page ********************************/
