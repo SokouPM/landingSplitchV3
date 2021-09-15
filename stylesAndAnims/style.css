@@ -6,13 +6,33 @@
 * {
     margin: 0;
     padding: 0;
-    /* -ms-overflow-style: none;
-    scrollbar-width: none; */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-/* *::-webkit-scrollbar {
+*::-webkit-scrollbar {
     display: none;
-} */
+}
+
+#previousPageButton, #nextPageButton {
+    position: fixed;
+    width: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#previousPageButton {
+    left: 5vh;
+    top: 5vh;
+}
+
+#nextPageButton {
+    bottom: 5vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
 .mainDiv {
     display: flex;
