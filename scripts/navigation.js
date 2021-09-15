@@ -56,41 +56,50 @@ function toggleViews(currentViewIndex) {
             $('#beFirst').removeClass("none");
             break;
         case 8:
+            $('#toGetBadge').removeClass("none");
+            break;
+        case 9:
             $('#enterInGame').removeClass("none");
             $('#nextPageButton').addClass("none")
             break;
-        case 9:
+        case 10:
             $('#reserve').removeClass("none");
             // $('#nextPageButton').addClass("none")
             break;
-        case 10:
+        case 11:
             $('#putAside').removeClass("none");
             break;
-        case 11:
+        case 12:
             $('#whatYouThrill').removeClass("none");
             break;
-        case 12:
+        case 13:
             $('#tags').removeClass("none");
             // $('#nextPageButton').addClass("none")
-            break;
-        case 13:
-            $('#cantWaitToThrill').removeClass("none");
+            tagAppear(500);
+
+            $('.tags').delegate('p', 'click', function () {
+                $(this).toggleClass('selectedTag');
+            });
+
             break;
         case 14:
+            $('#cantWaitToThrill').removeClass("none");
+            break;
+        case 15:
             $('#whatBadge').removeClass("none");
             // $('#nextPageButton').addClass("none")
             break;
-        case 15:
+        case 16:
             $('#goodChoice').removeClass("none");
             break;
-        case 16:
+        case 17:
             $('#whatMail').removeClass("none");
             // $('#nextPageButton').addClass("none")
             break;
-        case 17:
+        case 18:
             $('#prepareProfile').removeClass("none");
             break;
-        case 18:
+        case 19:
             $('#followUs').removeClass("none");
             $('#nextPageButton').addClass("none")
             break;
@@ -99,18 +108,30 @@ function toggleViews(currentViewIndex) {
     }
 }
 
-// function typeEffect(element, speed) {
-//     var text = $(element).html();
-//     console.log(text)
-//     // $(element).html("");
+function tagAppear(time) {
 
-//     var i = 0;
-//     var timer = setInterval(function () {
-//         if (i < text.length) {
-//             element.append(text.charAt(i));
-//             i++;
-//         } else {
-//             clearInterval(timer);
-//         }
-//     }, speed);
-// }
+    const tags = document.querySelectorAll('.tags p');
+
+    for (let i = 0; i < tags.length; i++) {
+        setTimeout(function () {
+            if (tags[i].classList.contains('first')) {
+                tags[i].classList.add('appear');
+            }
+            setTimeout(function () {
+                if (tags[i].classList.contains('second')) {
+                    tags[i].classList.add('appear');
+                }
+                setTimeout(function () {
+                    if (tags[i].classList.contains('third')) {
+                        tags[i].classList.add('appear');
+                    }
+                    setTimeout(function () {
+                        if (tags[i].classList.contains('fourth')) {
+                            tags[i].classList.add('appear');
+                        }
+                    }, time);
+                }, time);
+            }, time);
+        }, time);
+    }
+}

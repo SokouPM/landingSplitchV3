@@ -27,7 +27,7 @@
     }
 }
 
-/******************************** Index Page ********************************/
+/******************************** home Page ********************************/
 
 /******************************** weSplitch Page ********************************/
 
@@ -36,12 +36,6 @@
     white-space: nowrap;
     animation: h2EnterAnim 3s ease 0s 1 normal forwards;
 }
-
-/* .h2weSplitchLeaveAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2weSplitchLeaveAnim 1s ease 0s 1 normal forwards;
-} */
 
 @keyframes h2EnterAnim {
     0% {
@@ -52,18 +46,7 @@
     }
 }
 
-/* @keyframes h2weSplitchLeaveAnim {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
-    }
-} */ 
-
-
 .textAnim {
-
     letter-spacing: 4px;
     overflow: hidden;
     background: linear-gradient(90deg, #363A65, #363A65, #fff, #363A65);
@@ -71,16 +54,16 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     animation: animate 10s linear infinite;
-  }
-  
-  @keyframes animate {
+}
+
+@keyframes animate {
     0% {
-      background-position: -500%;
+        background-position: -500%;
     }
     100% {
-      background-position: 500%;
+        background-position: 500%;
     }
-  }
+}
 
 /******************************** newSocialNetwork Page ********************************/
 
@@ -188,37 +171,6 @@
 }
 
 /******************************** emotion Page ********************************/
-
-.h2emotionEnterAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2emotionEnterAnim 1s ease 0s 1 normal forwards;
-}
-
-/* 
-.h2emotionLeaveAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2emotionLeaveAnim 1s ease 0s 1 normal forwards;
-} */
-
-@keyframes h2emotionEnterAnim {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-/* @keyframes h2emotionLeaveAnim {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
-    }
-} */
 
 .emotionBackgroundAppear {
     animation: emotionBackgroundAppear 1s ease 0s 1 normal forwards;
@@ -417,33 +369,18 @@
 
 /******************************** beFirst Page ********************************/
 
-.h2beFirstEnterAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2beFirstEnterAnim 1s ease 0s 1 normal forwards;
+.imgBefirstEnterTopLeft {
+    animation: imgBefirstEnterTopLeft 1s ease 0s 1 normal forwards;
 }
 
-.h2beFirstLeaveAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2beFirstLeaveAnim 1s ease 0s 1 normal forwards;
-}
-
-@keyframes h2beFirstEnterAnim {
+@keyframes imgBefirstEnterTopLeft {
     0% {
-        width: 0;
+        opacity: 0;
+        transform: translate(-250px, -170px);
     }
     100% {
-        width: 100%;
-    }
-}
-
-@keyframes h2beFirstLeaveAnim {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
+        opacity: 0.5;
+        transform: translate(0, 0);
     }
 }
 
@@ -451,38 +388,49 @@
     animation: imgBefirstEnterTop 1s ease 0s 1 normal forwards;
 }
 
-.imgBefirstLeaveTop {
-    animation: imgBefirstLeaveTop 1s ease 0s 1 normal forwards;
-}
-
 @keyframes imgBefirstEnterTop {
     0% {
         opacity: 0;
-        transform: translateY(-250px);
+        transform: translateY(-170px);
     }
     100% {
-        opacity: 1;
+        opacity: 0.5;
         transform: translateY(0);
     }
 }
 
-@keyframes imgBefirstLeaveTop {
+.imgBefirstEnterTopRight {
+    animation: imgBefirstEnterTopRight 1s ease 0s 1 normal forwards;
+}
+
+@keyframes imgBefirstEnterTopRight {
     0% {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 0;
+        transform: translate(250px, -170px);
     }
     100% {
+        opacity: 0.5;
+        transform: translate(0, 0);
+    }
+}
+
+.imgBefirstEnterBottomLeft {
+    animation: imgBefirstEnterBottomLeft 1s ease 0s 1 normal forwards;
+}
+
+@keyframes imgBefirstEnterBottomLeft {
+    0% {
         opacity: 0;
-        transform: translateY(-250px);
+        transform: translate(-250px, 170px);
+    }
+    100% {
+        opacity: 0.5;
+        transform: translate(0, 0);
     }
 }
 
 .imgBefirstEnterBottom {
     animation: imgBefirstEnterBottom 1s ease 0s 1 normal forwards;
-}
-
-.imgBefirstLeaveBottom {
-    animation: imgBefirstLeaveBottom 1s ease 0s 1 normal forwards;
 }
 
 @keyframes imgBefirstEnterBottom {
@@ -491,22 +439,27 @@
         transform: translateY(250px);
     }
     100% {
-        opacity: 1;
+        opacity: 0.5;
         transform: translateY(0);
     }
 }
 
-@keyframes imgBefirstLeaveBottom {
+.imgBefirstEnterBottomRight {
+    animation: imgBefirstEnterBottomRight 1s ease 0s 1 normal forwards;
+}
+
+@keyframes imgBefirstEnterBottomRight {
     0% {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 0;
+        transform: translate(250px, 170px);
     }
     100% {
-        opacity: 0;
-        transform: translateY(250px);
+        opacity: 0.5;
+        transform: translate(0, 0);
     }
 }
 
+/* 
 .imgBefirstAnim1 {
     animation: imgBefirstAnim1 1s linear 0s infinite normal forwards;
 }
@@ -569,7 +522,7 @@
     100% {
         transform: translateX(5px);
     }
-}
+} */
 
 /******************************** enterInGame Page ********************************/
 
@@ -623,21 +576,6 @@
     }
 }
 
-.h2reserveEnterAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2reserveEnterAnim 1s ease 0s 1 normal forwards;
-}
-
-@keyframes h2reserveEnterAnim {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
 input[type="text"] {
     animation: inputEntrance 1s ease 0s 1 normal forwards;
 }
@@ -657,64 +595,21 @@ input[type="text"] {
 
 /******************************** putAside Page ********************************/
 
-.h2putAsideEnterAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2putAsideEnterAnim 1s ease 0s 1 normal forwards;
-}
-
-.h2putAsideLeaveAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2putAsideLeaveAnim 1s ease 0s 1 normal forwards;
-}
-
-@keyframes h2putAsideEnterAnim {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
-@keyframes h2putAsideLeaveAnim {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
-    }
-}
-
 /******************************** whatYouThrill Page ********************************/
 
-.h2whatYouThrillEnterAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2putAsideEnterAnim 1s ease 0s 1 normal forwards;
+/******************************** tags Page ********************************/
+
+.appear {
+    animation: tagAppear 1s forwards;
 }
 
-.h2whatYouThrillLeaveAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2putAsideLeaveAnim 1s ease 0s 1 normal forwards;
-}
-
-@keyframes h2putAsideEnterAnim {
+@keyframes tagAppear {
     0% {
-        width: 0;
+        transform: scale(0);
+        opacity: 0;
     }
     100% {
-        width: 60%;
-    }
-}
-
-@keyframes h2putAsideLeaveAnim {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
+        transform: scale(1);
+        opacity: 1;
     }
 }

@@ -41,6 +41,7 @@
     justify-content: center;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
     position: relative;
 }
 
@@ -245,12 +246,12 @@ span {
 }
 
 #bckGrndImgBefirs1 {
-    top: 15vh;
-    left: 3vw
+    top: 13vh;
+    left: -2vw
 }
 
 #bckGrndImgBefirs2 {
-    top: 9vh;
+    top: 1vh;
     left: 17vw
 }
 
@@ -260,38 +261,38 @@ span {
 }
 
 #bckGrndImgBefirs4 {
-    top: 4vh;
+    top: -2vh;
     left: 44vw
 }
 
 #bckGrndImgBefirs5 {
-    top: 16vh;
+    top: 6vh;
     right: 37vw;
 }
 
 #bckGrndImgBefirs6 {
-    top: 4vh;
-    right: 28vw
+    top: -11vh;
+    right: 24vw;
 }
 
 #bckGrndImgBefirs7 {
     top: 17vh;
-    right: 18vw
+    right: 13vw
 }
 
 #bckGrndImgBefirs8 {
     top: 11vh;
-    right: 5vw;
+    right: -1vw;
 }
 
 #bckGrndImgBefirs9 {
-    bottom: 28vh;
-    left: 5vw;
+    bottom: 22vh;
+    left: 2vw;
 }
 
 #bckGrndImgBefirs10 {
-    bottom: 15vh;
-    left: 17vw;
+    bottom: 6vh;
+    left: 15vw;
 }
 
 #bckGrndImgBefirs11 {
@@ -300,28 +301,28 @@ span {
 }
 
 #bckGrndImgBefirs12 {
-    bottom: 8vh;
+    bottom: -4vh;
     left: 40vw;
 }
 
 #bckGrndImgBefirs13 {
-    bottom: 11vh;
-    right: 44vw;
+    bottom: 4vh;
+    right: 42vw;
 }
 
 #bckGrndImgBefirs14 {
     bottom: 14vh;
-    right: 33vw;
+    right: 30vw;
 }
 
 #bckGrndImgBefirs15 {
-    bottom: 11vh;
-    right: 23vw;
+    bottom: 8vh;
+    right: 18vw;
 }
 
 #bckGrndImgBefirs16 {
-    bottom: 28vh;
-    right: 8vw;
+    bottom: 23vh;
+    right: 4vw;
 }
 
 /******************************** enterInGame Page ********************************/
@@ -368,6 +369,40 @@ input[type="submit"] {
 /******************************** whatYouThrill Page ********************************/
 
 /******************************** tags Page ********************************/
+
+#tags h2 {
+    margin-bottom: 40px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.tags p {
+    height: max-content;
+    width: max-content;
+    margin: 10px 20px;
+    padding: 15px 35px;
+    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.11);
+    border-radius: 20px;
+    background-color: white;
+    color: #363A65;
+    font-family: "Tisa Sans Pro";
+    cursor: pointer;
+    opacity: 0;
+}
+
+.tags p:hover, .selectedTag {
+    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: white;
+    box-shadow: none;
+}
 
 /******************************** cantWaitToThrill Page ********************************/
 
