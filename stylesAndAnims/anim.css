@@ -459,9 +459,9 @@
     }
 }
 
-/* 
+
 .imgBefirstAnim1 {
-    animation: imgBefirstAnim1 1s linear 0s infinite normal forwards;
+    animation: imgBefirstAnim1 2s linear 0s infinite normal forwards;
 }
 
 @keyframes imgBefirstAnim1 {
@@ -477,7 +477,7 @@
 }
 
 .imgBefirstAnim2 {
-    animation: imgBefirstAnim2 1s linear 0s infinite normal forwards;
+    animation: imgBefirstAnim2 2s linear 0s infinite normal forwards;
 }
 
 @keyframes imgBefirstAnim2 {
@@ -493,7 +493,7 @@
 }
 
 .imgBefirstAnim3 {
-    animation: imgBefirstAnim3 1s linear 0s infinite normal forwards;
+    animation: imgBefirstAnim3 2s linear 0s infinite normal forwards;
 }
 
 @keyframes imgBefirstAnim3 {
@@ -509,7 +509,7 @@
 }
 
 .imgBefirstAnim4 {
-    animation: imgBefirstAnim4 1s linear 0s infinite normal forwards;
+    animation: imgBefirstAnim4 2s linear 0s infinite normal forwards;
 }
 
 @keyframes imgBefirstAnim4 {
@@ -522,7 +522,7 @@
     100% {
         transform: translateX(5px);
     }
-} */
+}
 
 /******************************** enterInGame Page ********************************/
 

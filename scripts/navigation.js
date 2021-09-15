@@ -54,6 +54,26 @@ function toggleViews(currentViewIndex) {
             break;
         case 7:
             $('#beFirst').removeClass("none");
+
+            setTimeout(function () {
+                $('#bckGrndImgBefirs1').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim1');
+                $('#bckGrndImgBefirs2').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim2');
+                $('#bckGrndImgBefirs3').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim4');
+                $('#bckGrndImgBefirs4').removeClass('imgBefirstEnterTop').addClass('imgBefirstAnim3');
+                $('#bckGrndImgBefirs5').removeClass('imgBefirstEnterTop').addClass('imgBefirstAnim4');
+                $('#bckGrndImgBefirs6').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim2');
+                $('#bckGrndImgBefirs7').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim1');
+                $('#bckGrndImgBefirs8').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim3');
+                $('#bckGrndImgBefirs9').removeClass('imgBefirstEnterBottomLeft').addClass('imgBefirstAnim3');
+                $('#bckGrndImgBefirs10').removeClass('imgBefirstEnterBottomLeft').addClass('imgBefirstAnim4');
+                $('#bckGrndImgBefirs11').removeClass('imgBefirstEnterBottomLeft').addClass('imgBefirstAnim1');
+                $('#bckGrndImgBefirs12').removeClass('imgBefirstEnterBottom').addClass('imgBefirstAnim4');
+                $('#bckGrndImgBefirs13').removeClass('imgBefirstEnterBottom').addClass('imgBefirstAnim2');
+                $('#bckGrndImgBefirs14').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim3');
+                $('#bckGrndImgBefirs15').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim2');
+                $('#bckGrndImgBefirs16').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim1');
+            }, 1000);
+
             break;
         case 8:
             $('#toGetBadge').removeClass("none");
