@@ -78,6 +78,26 @@
     }
 }
 
+.textAnim {
+
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #363A65, #363A65, #fff, #363A65);
+    background-size: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
 /******************************** newSocialNetwork Page ********************************/
 
 .h2newSocialNetworkEnterAnim {
