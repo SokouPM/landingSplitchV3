@@ -379,7 +379,7 @@
         transform: translate(-250px, -170px);
     }
     100% {
-        opacity: 0.5;
+        opacity: 1;
         transform: translate(0, 0);
     }
 }
@@ -394,7 +394,7 @@
         transform: translateY(-170px);
     }
     100% {
-        opacity: 0.5;
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -409,7 +409,7 @@
         transform: translate(250px, -170px);
     }
     100% {
-        opacity: 0.5;
+        opacity: 1;
         transform: translate(0, 0);
     }
 }
@@ -424,7 +424,7 @@
         transform: translate(-250px, 170px);
     }
     100% {
-        opacity: 0.5;
+        opacity: 1;
         transform: translate(0, 0);
     }
 }
@@ -439,7 +439,7 @@
         transform: translateY(250px);
     }
     100% {
-        opacity: 0.5;
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -454,7 +454,7 @@
         transform: translate(250px, 170px);
     }
     100% {
-        opacity: 0.5;
+        opacity: 1;
         transform: translate(0, 0);
     }
 }

@@ -72,6 +72,8 @@ function toggleViews(currentViewIndex) {
                 $('#bckGrndImgBefirs14').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim3');
                 $('#bckGrndImgBefirs15').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim2');
                 $('#bckGrndImgBefirs16').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim1');
+                $('#bckGrndImgBefirs17').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim1');
+                $('#bckGrndImgBefirs18').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim2');
             }, 1000);
 
             break;

@@ -242,7 +242,7 @@ span {
 
 .beFirstImg {
     position: absolute;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 #bckGrndImgBefirs1 {
@@ -325,6 +325,16 @@ span {
     right: 4vw;
 }
 
+#bckGrndImgBefirs17 {
+    top: 30vh;
+    left: 15vw;
+}
+
+#bckGrndImgBefirs18 {
+    top: 22vh;
+    right: 25vw;
+}
+
 /******************************** enterInGame Page ********************************/
 
 #enterInGame .wthBtn {
@@ -387,9 +397,8 @@ input[type="submit"] {
 .tags p {
     height: max-content;
     width: max-content;
-    margin: 8px 10px;
+    margin: 10px 12px;
     padding: 10px 27px;
-    font-size: 15px;
     box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.11);
     border-radius: 20px;
     background-color: white;
