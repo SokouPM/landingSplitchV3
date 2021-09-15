@@ -31,52 +31,36 @@
 
 /******************************** weSplitch Page ********************************/
 
-/* .h2weSplitchEnterAnim {
+.h2EnterAnim {
     overflow: hidden;
     white-space: nowrap;
-    animation: h2weSplitchEnterAnim 1s ease 0s 1 normal forwards;
+    animation: h2EnterAnim 3s ease 0s 1 normal forwards;
 }
 
-.h2weSplitchLeaveAnim {
+/* .h2weSplitchLeaveAnim {
     overflow: hidden;
     white-space: nowrap;
     animation: h2weSplitchLeaveAnim 1s ease 0s 1 normal forwards;
-}
-
-@keyframes h2weSplitchEnterAnim {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes h2weSplitchLeaveAnim {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
-    }
 } */
 
-/* DEMO-SPECIFIC STYLES */
-
-.typewriterAnimation {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 3s steps(50, end) 1 normal forwards;
-}
-
-@keyframes typing {
-    from {
-        width: 0
+@keyframes h2EnterAnim {
+    0% {
+        width: 0;
     }
-    to {
-        width: 100%
+    100% {
+        width: 100%;
     }
 }
+
+/* @keyframes h2weSplitchLeaveAnim {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+} */ 
+
 
 .textAnim {
 
@@ -86,7 +70,7 @@
     background-size: 80%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    animation: animate 3s linear infinite;
+    animation: animate 10s linear infinite;
   }
   
   @keyframes animate {
