@@ -1,18 +1,5 @@
-.elementLeave {
-    animation: elementLeave 1s ease 0s 1 normal forwards;
-}
-
-@keyframes elementLeave {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 .buttonEntrance {
-    animation: buttonEntrance 0.4s ease 0s 1 normal forwards;
+    animation: buttonEntrance 1s ease 0s 1 normal forwards;
 }
 
 @keyframes buttonEntrance {
@@ -27,9 +14,6 @@
     }
 }
 
-/******************************** home Page ********************************/
-
-/******************************** weSplitch Page ********************************/
 
 .h2EnterAnim {
     overflow: hidden;
@@ -46,54 +30,23 @@
     }
 }
 
-.textAnim {
-    letter-spacing: 4px;
-    overflow: hidden;
-    background: linear-gradient(90deg, #363A65, #363A65, #fff, #363A65);
-    background-size: 80%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    animation: animate 10s linear infinite;
-}
 
-@keyframes animate {
-    0% {
-        background-position: -500%;
-    }
-    100% {
-        background-position: 500%;
-    }
-}
+/******************************** home Page ********************************/
+
+/******************************** weSplitch Page ********************************/
 
 /******************************** newSocialNetwork Page ********************************/
 
-.h2newSocialNetworkEnterAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2newSocialNetworkEnterAnim 1s ease 0s 1 normal forwards;
+.phoneAnimation {
+    animation: phoneAnimation 1s ease 0s 1 normal forwards;
 }
 
-.h2newSocialNetworkLeaveAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2newSocialNetworkLeaveAnim 1s ease 0s 1 normal forwards;
-}
-
-@keyframes h2newSocialNetworkEnterAnim {
+@keyframes phoneAnimation {
     0% {
-        width: 0;
+        transform: rotate(-80deg);
     }
     100% {
-        width: 100%;
-    }
-}
-
-@keyframes h2newSocialNetworkLeaveAnim {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
+        transform: rotate(-10deg);
     }
 }
 
@@ -170,112 +123,25 @@
     }
 }
 
-/******************************** emotion Page ********************************/
+/******************************** howBasket Page ********************************/
 
-.emotionBackgroundAppear {
-    animation: emotionBackgroundAppear 1s ease 0s 1 normal forwards;
+.basketPlayerEntrance {
+    animation: basketPlayerEntrance 1s ease 0s 1 normal forwards;
 }
 
-@keyframes emotionBackgroundAppear {
+@keyframes basketPlayerEntrance {
     0% {
-        opacity: 0;
-        transform: translateX(250px) translateY(-150px);
+        transform: translateY(250px);
+    }
+    70% {
+        transform: translateY(-180px);
     }
     100% {
-        opacity: 1;
-        transform: translateX(0) translateY(0);
-    }
-}
-
-.sliderEnter {
-    animation: sliderEnter 1s ease 0s 1 normal forwards;
-}
-
-@keyframes sliderEnter {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.sliderPlusEnter {
-    animation: sliderPlusEnter 1s ease 0s 1 normal forwards;
-}
-
-@keyframes sliderPlusEnter {
-    0% {
-        transform: translateX(250px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-/******************************** connect Page ********************************/
-
-.h2connectEnterAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2connectEnterAnim 1s ease 0s 1 normal forwards;
-}
-
-.h2connectLeaveAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2connectLeaveAnim 1s ease 0s 1 normal forwards;
-}
-
-@keyframes h2connectEnterAnim {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes h2connectLeaveAnim {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
+        transform: translateY(0);
     }
 }
 
 /******************************** exchange Page ********************************/
-
-.h2exchangeEnterAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2exchangeEnterAnim 1s ease 0s 1 normal forwards;
-}
-
-.h2exchangeLeaveAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2exchangeLeaveAnim 1s ease 0s 1 normal forwards;
-}
-
-@keyframes h2exchangeEnterAnim {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes h2exchangeLeaveAnim {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
-    }
-}
 
 .exchangeImg1EntranceAnim {
     animation: exchangeImg1EntranceAnim 1s ease 0s 1 normal forwards;
@@ -365,6 +231,114 @@
         opacity: 0;
         transform: translateX(250px);
     }
+}
+
+.popupAnim {
+    animation: popupAnim 0.5s linear 0s 1 normal forwards;
+}
+
+@keyframes popupAnim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/******************************** emotion Page ********************************/
+
+.emotionBackgroundAppear {
+    animation: emotionBackgroundAppear 1s ease 0s 1 normal forwards;
+}
+
+@keyframes emotionBackgroundAppear {
+    0% {
+        opacity: 0;
+        transform: translateX(250px) translateY(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.sliderEnter {
+    animation: sliderEnter 1s ease 0s 1 normal forwards;
+}
+
+@keyframes sliderEnter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sliderPlusEnter {
+    animation: sliderPlusEnter 1s ease 0s 1 normal forwards;
+}
+
+@keyframes sliderPlusEnter {
+    0% {
+        transform: translateX(250px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/******************************** connect Page ********************************/
+.connectImgEnterBottomRight {
+    animation: connectImgEnterBottomRight 1s ease 0s 1 normal forwards;
+}
+
+@keyframes connectImgEnterBottomRight {
+  0% {
+    opacity: 0;
+    transform: translate(250px, 250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.connectImgEnterTop {
+    animation: connectImgEnterTop 1s ease 0s 1 normal forwards;
+}
+
+@keyframes connectImgEnterTop {
+  0% {
+    opacity: 0;
+    transform: translate(-100px, -250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.connectImgEnterBottomLeft {
+    animation: connectImgEnterBottomLeft 1s ease 0s 1 normal forwards;
+}
+
+@keyframes connectImgEnterBottomLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-250px, 250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /******************************** beFirst Page ********************************/
@@ -459,7 +433,6 @@
     }
 }
 
-
 .imgBefirstAnim1 {
     animation: imgBefirstAnim1 2s linear 0s infinite normal forwards;
 }
@@ -526,35 +499,6 @@
 
 /******************************** enterInGame Page ********************************/
 
-.h2enterInGameEnterAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2enterInGameEnterAnim 1s ease 0s 1 normal forwards;
-}
-
-/* .h2enterInGameLeaveAnim {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: h2enterInGameLeaveAnim 1s ease 0s 1 normal forwards;
-} */
-
-@keyframes h2enterInGameEnterAnim {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
-/* @keyframes h2enterInGameLeaveAnim {
-    0% {
-        width: 60%;
-    }
-    100% {
-        width: 0;
-    }
-} */
 
 /******************************** reserve Page ********************************/
 
@@ -611,5 +555,55 @@ input[type="text"] {
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+/******************************** whatBadge Page ********************************/
+
+.badgeEntranceLeft {
+    animation: badgeEntranceLeft 1s ease 0s 1 normal forwards;
+}
+
+@keyframes badgeEntranceLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+
+.badgeEntranceRight {
+    animation: badgeEntranceRight 1s ease 0s 1 normal forwards;
+}
+
+@keyframes badgeEntranceRight {
+    0% {
+      opacity: 0;
+      transform: translateX(250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+/******************************** prepareProfile Page ********************************/
+
+.progressBarAnim {
+   animation: progressBarAnim 2.5s ease 1s 1 normal forwards;
+}
+
+@keyframes progressBarAnim {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 100%;
     }
 }

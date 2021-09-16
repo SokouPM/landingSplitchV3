@@ -3,6 +3,11 @@
     src: url('/ressources/fonts/TisaSansPro-BlackItalic.ttf');
 }
 
+@font-face {
+    font-family: "Tisa Sans Pro-light";
+    src: url('/ressources/fonts/TisaSansPro-Light.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -89,6 +94,7 @@ a:visited {
 .wthBtn {
     border: 10px solid #FFFFFF;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+    z-index: 10;
 }
 
 .bordBtn {
@@ -147,9 +153,9 @@ span {
     -webkit-text-fill-color: transparent;
 }
 
-/******************************** Index Page ********************************/
+/******************************** home Page ********************************/
 
-#logo, #SVGLogo, #bordBtn {
+#logo, #SVGLogo, #bordBtn, #SVGLogo2 {
     margin: auto;
     width: max-content;
 }
@@ -158,9 +164,62 @@ span {
     width: 300px;
 }
 
+.bille {
+    position: absolute;
+}
+
+#bille1 {
+    top: 0.5vh;
+    right: 4vw;
+}
+
+#bille2 {
+    top: 10vh;
+    left: 3vw;
+}
+
+#bille3 {
+    top: 16vh;
+    right: 10vw;
+}
+
+#bille4 {
+    top: 33vh;
+    right: 30vw;
+}
+
+#bille5 {
+    top: 40vh;
+    left: 18vw;
+}
+
+#bille6 {
+    top: 42vh;
+    right: 0;
+}
+
+#bille7 {
+    bottom: 18vh;
+    left: 8vw;
+}
+
+#bille8 {
+    bottom: 0.5vh;
+    right: 28vw;
+}
+
 /******************************** weSplitch Page ********************************/
 
 /******************************** newSocialNetwork Page ********************************/
+
+#phone {
+    position: absolute;
+    left: 10vw;
+}
+
+#newSocialNetwork h2 {
+    margin-left: 12vw;
+}
 
 /******************************** passion Page ********************************/
 
@@ -168,43 +227,61 @@ span {
     margin-bottom: -25px;
 }
 
+/******************************** howBasket Page ********************************/
+
+#howBasket {
+    background: url(/ressources/img/basketBckgrnd.png) no-repeat 50% 20%;
+    background-size: cover;
+}
+
+#howBasket .wthBtn {
+    margin-bottom: 20vh;
+}
+
+#basketPlayerImg {
+    position: absolute;
+    bottom: -25vh;
+}
+
+/******************************** exchange Page ********************************/
+
+#iconsExchange {
+    display: flex;
+    align-items: flex-start;
+}
+
+#iconsExchange img {
+    margin: 15px;
+}
+
+#iconsExchange img:nth-child(2) {
+    margin-top: 70px;
+}
+
 /******************************** emotion Page ********************************/
 
-#passionTitle {
-    margin-top: 13vh;
+#emotion h2 {
     margin-bottom: 5vh;
 }
 
-.slide {
-    width: 300px;
+.splide__slide {
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 100px;
+    justify-content: center;
 }
 
-.horizontalBlock {
-    display: flex;
-    flex-direction: row;
-    width: max-content;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-}
-
-.container {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-x: hidden;
-}
-
-#sliderPlus {
-    position: absolute;
-    right: 5vw;
-    top: 40vh;
-    border-radius: 100%;
+button.splide__arrow {
+    border: none;
+    background: none;
     cursor: pointer;
+    position: absolute;
+    right: -8%;
+    top: 20%;
+    z-index: 10;
+}
+
+#splide01 {
+    margin-right: 5vw;
 }
 
 #background2 {
@@ -221,21 +298,25 @@ span {
     z-index: -10;
 }
 
-/******************************** action Page ********************************/
+/******************************** connect Page ********************************/
 
-/******************************** exchange Page ********************************/
-
-#iconsExchange {
-    display: flex;
-    align-items: flex-start;
+.connectImg {
+    position: absolute;
 }
 
-#iconsExchange img {
-    margin: 15px;
+#connectImg1 {
+    bottom: 5vh;
+    right: 2vw;
 }
 
-#iconsExchange img:nth-child(2) {
-    margin-top: 70px;
+#connectImg2 {
+    top: 3vh;
+    right: 30vw;
+}
+
+#connectImg3 {
+    bottom: -1.5vh;
+    left: 1vw;
 }
 
 /******************************** beFirst Page ********************************/
@@ -326,12 +407,12 @@ span {
 }
 
 #bckGrndImgBefirs17 {
-    top: 30vh;
-    left: 15vw;
+    top: 25vh;
+    left: 10vw;
 }
 
 #bckGrndImgBefirs18 {
-    top: 22vh;
+    top: 20vh;
     right: 25vw;
 }
 
@@ -363,7 +444,7 @@ input[type="text"] {
     width: 703px;
     height: 25px;
     padding: 20px 30px;
-    font-family: "Tisa Sans Pro";
+    font-family: "Tisa Sans Pro-light";
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -378,7 +459,44 @@ input[type="submit"] {
 
 /******************************** whatYouThrill Page ********************************/
 
-/******************************** tags Page ********************************/
+#mainTagCategories {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mainCategorie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 40px 0;
+}
+
+.mainCategorie:hover {
+    cursor: pointer;
+    transform: scale(120%);
+    transition: all 0.2s;
+}
+
+.mainCategorie img, .mainCategorieTitle img {
+    margin-bottom: 20px;
+}
+
+.mainCategorie p, .mainCategorieTitle p {
+    font-family: "Tisa Sans Pro";
+    color: #363A65;
+    font-size: 30px;
+    line-height: 32.49px;
+}
+
+.mainCategorieTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/******************************** tags Pages ********************************/
 
 #tags h2 {
     margin-bottom: 40px;
@@ -391,7 +509,8 @@ input[type="submit"] {
     justify-content: center;
     align-items: center;
     background: none;
-    padding: 0 20px;
+    padding: 0 5vw;
+    margin-bottom: 20px;
 }
 
 .tags p {
@@ -415,12 +534,32 @@ input[type="submit"] {
     box-shadow: none;
 }
 
+.titleOftag {
+    margin-bottom: 10px;
+}
+
+.tagLegend {
+    font-family: "Tisa Sans Pro-light" !important;
+}
+
+.tagsButton {
+    position: absolute;
+    right: 7vw;
+    bottom: 6vh;
+}
+
 /******************************** cantWaitToThrill Page ********************************/
 
 /******************************** whatBadge Page ********************************/
 
+#whatBadge form {
+    display: flex;
+    flex-direction: column;
+}
+
 #badgesList {
     margin-top: 50px;
+    display: flex;
 }
 
 #badgesList img {
@@ -428,9 +567,18 @@ input[type="submit"] {
     margin: 0 50px;
 }
 
-#badgesList img:hover {
+#badgesList img:hover:not(.selectedBadge), .selectedBadge {
     cursor: pointer;
     transform: scale(120%);
+    transition: all 0.2s;
+}
+
+input[type="radio"] {
+    opacity: 0;
+}
+
+#badgeButton {
+    margin-top: 50px;
 }
 
 /******************************** goodChoice Page ********************************/
@@ -439,4 +587,28 @@ input[type="submit"] {
 
 /******************************** prepareProfile Page ********************************/
 
+#prgressBarBckgrnd {
+    margin-top: 40px;
+    width: 325px;
+    border-radius: 40px;
+    background: #e5e5e5;
+}
+
+#progressBar {
+    width: 10%;
+    border-radius: 40px;
+    height: 39px;
+    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+}
+
 /******************************** followUs Page ********************************/
+
+#followButton {
+    margin-top: 40px;
+}
+
+#thank {
+    position: absolute;
+    right: 20vw;
+    bottom: 5vh;
+}

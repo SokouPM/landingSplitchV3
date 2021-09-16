@@ -1,15 +1,16 @@
 $(document).ready(function () {
 
     let currentViewIndex = 0;
-
     toggleViews(currentViewIndex);
 
     $('#nextPageButton').click(function () {
+        stopTimeOut();
         currentViewIndex++
         toggleViews(currentViewIndex);
     });
 
     $('#previousPageButton').click(function () {
+        stopTimeOut();
         currentViewIndex--
         toggleViews(currentViewIndex);
     });
@@ -19,40 +20,112 @@ $(document).ready(function () {
         toggleViews(currentViewIndex);
     });
 
+    // Main tag categories buttons
+    $('#Creativity').click(function () {
+        currentViewIndex = 14;
+        toggleViews(currentViewIndex);
+    })
+    $('#Sport').click(function () {
+        currentViewIndex = 15;
+        toggleViews(currentViewIndex);
+    })
+    $('#Discovery').click(function () {
+        currentViewIndex = 16;
+        toggleViews(currentViewIndex);
+    })
+
+    $('#hobby').click(function () {
+        currentViewIndex = 17;
+        toggleViews(currentViewIndex);
+    })
+    // Tag page categories buttons
+    $('.tagsButton').click(function () {
+        currentViewIndex = 18;
+        toggleViews(currentViewIndex);
+    })
 });
 
 //////////////////////////////// Function ////////////////////////////////
 
 function toggleViews(currentViewIndex) {
-    console.log(currentViewIndex);
     $('.mainDiv').addClass("none");
-    $('#previousPageButton').removeClass("none")
-    $('#nextPageButton').removeClass("none")
+    $('#previousPageButton').removeClass("none");
+    $('#nextPageButton').removeClass("none");
     switch (currentViewIndex) {
         case 0:
             $('#home').removeClass("none");
-            $('#previousPageButton').addClass("none")
-            $('#nextPageButton').addClass("none")
+            $('#previousPageButton').addClass("none");
+            $('#nextPageButton').addClass("none");
             break;
         case 1:
             $('#weSplitch').removeClass("none");
+            // $('#nextPageButton').addClass("none");
             break;
         case 2:
             $('#newSocialNetwork').removeClass("none");
+            // $('#nextPageButton').addClass("none");
             break;
         case 3:
             $('#passion').removeClass("none");
+            // $('#nextPageButton').addClass("none");
             break;
         case 4:
-            $('#emotion').removeClass("none");
+            $('#howBasket').removeClass("none");
+            // $('#nextPageButton').addClass("none")
             break;
         case 5:
-            $('#connect').removeClass("none");
+            $('#exchange').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            setTimeout(function () {
+                $('#exchangeImg1').removeClass("exchangeImg1EntranceAnim").addClass("popupAnim");
+                setTimeout(function () {
+                    $('#exchangeImg2').removeClass("exchangeImg2EntranceAnim").addClass("popupAnim");
+                    setTimeout(function () {
+                        $('#exchangeImg3').removeClass("exchangeImg3EntranceAnim").addClass("popupAnim");
+                    }, 200);
+                }, 200);
+            }, 1000);
             break;
         case 6:
-            $('#exchange').removeClass("none");
+            $('#emotion').removeClass("none");
+
+            new Splide('.splide', {
+                type: 'loop',
+                perPage: 5,
+                perMove: 1,
+                gap: 20,
+                width: '85%',
+                autoplay: true,
+                interval: 1500,
+                pagination: false,
+                trimSpace: true,
+                classes: {
+                    arrows: 'splide__arrows',
+                    arrow: 'splide__arrow',
+                    next: 'nextPlus',
+                },
+                breakpoints: {
+                    '1600': {
+                        perPage: 4,
+                    },
+                    '1300': {
+                        perPage: 3,
+                    },
+                    '965': {
+                        perPage: 2,
+                        width: '92%'
+                    },
+                    '620': {
+                        perPage: 1,
+                        width: '100%'
+                    }
+                }
+            }).mount();
             break;
         case 7:
+            $('#connect').removeClass("none");
+            break;
+        case 8:
             $('#beFirst').removeClass("none");
 
             setTimeout(function () {
@@ -77,53 +150,95 @@ function toggleViews(currentViewIndex) {
             }, 1000);
 
             break;
-        case 8:
-            $('#toGetBadge').removeClass("none");
-            break;
         case 9:
-            $('#enterInGame').removeClass("none");
-            $('#nextPageButton').addClass("none")
+            $('#toGetBadge').removeClass("none");
+            // $('#nextPageButton').addClass("none");
             break;
         case 10:
-            $('#reserve').removeClass("none");
-            // $('#nextPageButton').addClass("none")
+            $('#enterInGame').removeClass("none");
+            // $('#nextPageButton').addClass("none");
             break;
         case 11:
-            $('#putAside').removeClass("none");
+            $('#reserve').removeClass("none");
+            // $('#nextPageButton').addClass("none");
             break;
         case 12:
-            $('#whatYouThrill').removeClass("none");
+            $('#putAside').removeClass("none");
             break;
         case 13:
-            $('#tags').removeClass("none");
-            // $('#nextPageButton').addClass("none")
+            $('#whatYouThrill').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 14:
+            $('#CreativityTags').removeClass("none");
+            // $('#nextPageButton').addClass("none");
             tagAppear(500);
 
             $('.tags').delegate('p', 'click', function () {
                 $(this).toggleClass('selectedTag');
             });
-
-            break;
-        case 14:
-            $('#cantWaitToThrill').removeClass("none");
             break;
         case 15:
-            $('#whatBadge').removeClass("none");
-            // $('#nextPageButton').addClass("none")
+            $('#SportTags').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            tagAppear(500);
+
+            $('.tags').delegate('p', 'click', function () {
+                $(this).toggleClass('selectedTag');
+            });
             break;
         case 16:
-            $('#goodChoice').removeClass("none");
+            $('#DiscoveryTags').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            tagAppear(500);
+
+            $('.tags').delegate('p', 'click', function () {
+                $(this).toggleClass('selectedTag');
+            });
             break;
         case 17:
-            $('#whatMail').removeClass("none");
-            // $('#nextPageButton').addClass("none")
+            $('#HobbyTags').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            tagAppear(500);
+
+            $('.tags').delegate('p', 'click', function () {
+                $(this).toggleClass('selectedTag');
+            });
             break;
         case 18:
-            $('#prepareProfile').removeClass("none");
+            $('#cantWaitToThrill').removeClass("none");
+            // $('#nextPageButton').addClass("none");
             break;
         case 19:
+            $('#whatBadge').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            $('.badgeImg').click(function () {
+                $('.badgeImg').removeClass('selectedBadge');
+                $(this).addClass('selectedBadge');
+            })
+            break;
+        case 20:
+            $('#goodChoice').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 21:
+            $('#whatMail').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 22:
+            $('#prepareProfile').removeClass("none");
+            break;
+        case 23:
+            $('#comeOn2022').removeClass("none");
+            // $('#nextPageButton').addClass("none");          
+            break;
+        case 24:
+            $('#lastThing').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break
+        case 25:
             $('#followUs').removeClass("none");
-            $('#nextPageButton').addClass("none")
+            $('#nextPageButton').addClass("none");
             break;
         default:
             break;
@@ -157,3 +272,19 @@ function tagAppear(time) {
         }, time);
     }
 }
+
+// Stop automatic transistions
+
+let timeout = null;
+
+function gotNextView(currentViewIndex, time) {
+    timeout = setTimeout(function () {
+        currentViewIndex++;
+        toggleViews(currentViewIndex);
+    }, time);
+}
+
+function stopTimeOut() {
+    clearTimeout(timeout)
+}
+

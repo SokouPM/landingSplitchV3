@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide-core.min.css">
     <link rel="stylesheet" href="/stylesAndAnims/style.css">
     <link rel="stylesheet" href="/stylesAndAnims/anim.css">
 </head>
@@ -13,7 +14,16 @@
 <body>
     <img id="previousPageButton" class="none" src="/ressources/img/previous.png" alt="">
     <img id="nextPageButton" class="none" src="/ressources/img/next.png" alt="">
+
     <div class="mainDiv" id="home">
+        <img class="bille imgBefirstAnim1" id="bille1" src="/ressources/img/billes/1.png" alt="">
+        <img class="bille imgBefirstAnim3" id="bille2" src="/ressources/img/billes/2.png" alt="">
+        <img class="bille imgBefirstAnim4" id="bille3" src="/ressources/img/billes/3.png" alt="">
+        <img class="bille imgBefirstAnim2" id="bille4" src="/ressources/img/billes/4.png" alt="">
+        <img class="bille imgBefirstAnim4" id="bille5" src="/ressources/img/billes/5.png" alt="">
+        <img class="bille imgBefirstAnim1" id="bille6" src="/ressources/img/billes/6.png" alt="">
+        <img class="bille imgBefirstAnim3" id="bille7" src="/ressources/img/billes/7.png" alt="">
+        <img class="bille imgBefirstAnim2" id="bille8" src="/ressources/img/billes/8.png" alt="">
         <div>
             <div id="logo">
                 <img src="/ressources/img/Union.png" alt="Splitch logo">
@@ -251,11 +261,20 @@
     </div>
 
     <div class="mainDiv" id="weSplitch">
+        <img class="bille imgBefirstAnim1" id="bille1" src="/ressources/img/billes/1.png" alt="">
+        <img class="bille imgBefirstAnim3" id="bille2" src="/ressources/img/billes/2.png" alt="">
+        <img class="bille imgBefirstAnim4" id="bille3" src="/ressources/img/billes/3.png" alt="">
+        <img class="bille imgBefirstAnim2" id="bille4" src="/ressources/img/billes/4.png" alt="">
+        <img class="bille imgBefirstAnim4" id="bille5" src="/ressources/img/billes/5.png" alt="">
+        <img class="bille imgBefirstAnim1" id="bille6" src="/ressources/img/billes/6.png" alt="">
+        <img class="bille imgBefirstAnim3" id="bille7" src="/ressources/img/billes/7.png" alt="">
+        <img class="bille imgBefirstAnim2" id="bille8" src="/ressources/img/billes/8.png" alt="">
         <h2 class="h2EnterAnim">nous c'est <span>splitch</span></h2>
     </div>
 
     <div class="mainDiv" id="newSocialNetwork">
-        <h2 class="h2EnterAnim">le nouveau <span>réseau social</span><br>conçu pour toi, avec toi</h2>
+        <img id="phone" class="phoneAnimation" src="/ressources/img/phone.png" alt="">
+        <h2 class="h2EnterAnim">le nouveau <span>réseau social</span></h2>
     </div>
 
     <div class="mainDiv" id="passion">
@@ -264,31 +283,13 @@
         <h2 class="h2EnterAnim">pour partager tes <span>passions</span>.</h2>
     </div>
 
-    <!-- <div class="mainDiv" id="emotion">
-        <h2 id="passionTitle" class="h2emotionEnterAnim">Découvre, vibre, ressens.</h2>
-        <div class="container sliderEnter">
-            <div class="horizontalBlock">
-                <div class="slide"><img src="/ressources/img/slider/slideImg1.png" alt=""></div>
-                <div class="slide"><img src="/ressources/img/slider/slideImg2.png" alt=""></div>
-                <div class="slide"><img src="/ressources/img/slider/slideImg3.png" alt=""></div>
-                <div class="slide"><img src="/ressources/img/slider/slideImg1.png" alt=""></div>
-                <div class="slide"><img src="/ressources/img/slider/slideImg2.png" alt=""></div>
-                <div class="slide"><img src="/ressources/img/slider/slideImg3.png" alt=""></div>
-                <div class="slide"><img src="/ressources/img/slider/slideImg1.png" alt=""></div>
-                <div class="slide"><img src="/ressources/img/slider/slideImg2.png" alt=""></div>
-                <div class="slide"><img src="/ressources/img/slider/slideImg3.png" alt=""></div>
-                <div class="slide"><img src="/ressources/img/slider/slideImg1.png" alt=""></div>
-                <div class="slide"><img src="/ressources/img/slider/slideImg2.png" alt=""></div>
-                <div class="slide"><img src="/ressources/img/slider/slideImg3.png" alt=""></div>
+    <div class="mainDiv" id="howBasket">
+        <img class="basketPlayerEntrance" id="basketPlayerImg" src="/ressources/img/basketPlayer.png" alt="">
+        <div class="wthBtn" class="buttonEntrance">
+            <div class="bordBtn">
+                <a class="innerBtn">Comment ?</a>
             </div>
         </div>
-        <img id="sliderPlus" class="sliderPlusEnter" src="/ressources/img/sliderPlus.png" alt="">
-        <img id="background1" class="emotionBackgroundAppear" src="/ressources/img/slideBgd1.png" alt="">
-        <img id="background2" class="emotionBackgroundAppear" src="/ressources/img/slideBgd2.png" alt="">
-    </div> -->
-
-    <div class="mainDiv" id="connect">
-        <h2 class="h2EnterAnim">connecte-toi avec des gens<br> qui te ressemblent.</h2>
     </div>
 
     <div class="mainDiv" id="exchange">
@@ -300,8 +301,60 @@
         </div>
     </div>
 
+    <div class="mainDiv" id="emotion">
+        <h2 class="h2EnterAnim">découvre, vibre, ressens.</h2>
+        <div class="splide">
+            <div class="splide__arrows ">
+                <button class="splide__arrow splide__arrow--prev" style="display: none;"></button>
+                <button class="splide__arrow nextPlus">
+                    <img id="sliderPlus" src="/ressources/img/sliderPlus.png" alt="+">
+                </button>
+            </div>
+
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img class="slideImg" src="/ressources/img/slider/1.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="slideImg" src="/ressources/img/slider/2.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="slideImg" src="/ressources/img/slider/3.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="slideImg" src="/ressources/img/slider/4.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="slideImg" src="/ressources/img/slider/5.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="slideImg" src="/ressources/img/slider/6.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="slideImg" src="/ressources/img/slider/7.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="slideImg" src="/ressources/img/slider/8.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img id="background1" class="emotionBackgroundAppear" src="/ressources/img/slideBgd1.png" alt="">
+        <img id="background2" class="emotionBackgroundAppear" src="/ressources/img/slideBgd2.png" alt="">
+    </div>
+
+    <div class="mainDiv" id="connect">
+        <img id="connectImg1" class="connectImg connectImgEnterBottomRight" src="/ressources/img/connectImg/1.png"
+            alt="">
+        <img id="connectImg2" class="connectImg connectImgEnterTop" src="/ressources/img/connectImg/2.png" alt="">
+        <img id="connectImg3" class="connectImg connectImgEnterBottomLeft" src="/ressources/img/connectImg/3.png"
+            alt="">
+        <h2 class="h2EnterAnim"><span>connecte-toi</span> avec des gens<br> qui te ressemblent.</h2>
+    </div>
+
     <div class="mainDiv" id="beFirst">
-        <h2 class="h2EnterAnim">Fais partie<br> des 1 500 premiers inscrits...</h2>
+        <h2 class="h2EnterAnim">fais partie<br> des <span>1 500 premiers</span> inscrits</h2>
 
         <img id="bckGrndImgBefirs1" class="beFirstImg imgBefirstEnterTopLeft" src="/ressources/img/beFirstImg/1.png"
             alt="">
@@ -341,7 +394,7 @@
     </div>
 
     <div class="mainDiv" id="toGetBadge">
-        <h2 class="h2EnterAnim">pour obtenir ton badge<br> exclusif précurseur.</h2>
+        <h2 class="h2EnterAnim">pour obtenir<br><span>ton badge exclusif</span> !</h2>
 
         <img id="bckGrndImgBefirs1" class="beFirstImg imgBefirstAnim1" src="/ressources/img/beFirstImg/1.png" alt="">
         <img id="bckGrndImgBefirs2" class="beFirstImg imgBefirstAnim2" src="/ressources/img/beFirstImg/2.png" alt="">
@@ -395,54 +448,228 @@
     </div>
 
     <div class="mainDiv" id="whatYouThrill">
-        <h2 class="h2EnterAnim">qu’est ce qui te fait vibrer ?</h2>
+        <h2 class="h2EnterAnim">qu’est ce qui te fait <span>vibrer</span> ?</h2>
+        <div id="mainTagCategories">
+            <div id="Creativity" class="mainCategorie">
+                <img src="/ressources/img/tags/1.png" alt="">
+                <p>Créativité</p>
+            </div>
+            <div id="Sport" class="mainCategorie">
+                <img src="/ressources/img/tags/2.png" alt="">
+                <p>Sport</p>
+            </div>
+            <div id="Discovery" class="mainCategorie">
+                <img src="/ressources/img/tags/3.png" alt="">
+                <p>Découverte<br>& Bien-être</p>
+            </div>
+            <div id="hobby" class="mainCategorie">
+                <img src="/ressources/img/tags/4.png" alt="">
+                <p>Hobbies</p>
+            </div>
+        </div>
     </div>
 
-    <div class="mainDiv" id="tags">
-        <h2 class="h2EnterAnim">Choisis tes passions</h2>
+    <div class="mainDiv" id="CreativityTags">
+        <div class="mainCategorieTitle">
+            <img src="/ressources/img/tags/1.png" alt="">
+            <p class="titleOftag">Créativité</p>
+            <p class="tagLegend">sélectionne 3 tags ou plus</p>
+        </div>
         <div class="tags">
-            <p class="first">Big dreamer</p>
-            <p class="third">Planet I care</p>
-            <p class="second">Sneakers Addict</p>
-            <p class="first">LGBTQ+</p>
-            <p class="fourth">Street food</p>
-            <p class="third">Sorties</p>
-            <p class="first">Fan de chien</p>
-            <p class="second">Passion pizza</p>
-            <p class="fourth">Concert</p>
-            <p class="second">Dance</p>
-            <p class="first">Netflix</p>
-            <p class="third">Astrologie</p>
-            <p class="first">Cinéphile</p>
-            <p class="fourth">Mélomane</p>
-            <p class="second">Sport extrêmes</p>
+            <p class="first">Graphisme</p>
+            <p class="fourth">DIY</p>
+            <p class="second">Instruments</p>
+            <p class="third">Dj</p>
+            <p class="third">Tatouage</p>
+            <p class="fourth">Musique</p>
+            <p class="first">Cuisine</p>
+            <p class="first">Piercing</p>
+            <p class="second">Décoration</p>
+            <p class="second">Concerts</p>
+            <p class="fourth">Poèsie</p>
+            <p class="fourth">Graffity</p>
+            <p class="second">Peinture</p>
+            <p class="third">Couture</p>
+            <p class="first">Mode</p>
+            <p class="fourth">Dessin</p>
+            <p class="fourth">Cinéphile</p>
+            <p class="first">Écriture</p>
+            <p class="third">Théatre</p>
+            <p class="second">Photographie</p>
+            <p class="third">Chant</p>
+            <p class="first">Art</p>
+        </div>
+        <div class="tagsButton">
+            <div class="wthBtn" class="buttonEntrance">
+                <div class="bordBtn">
+                    <a class="innerBtn">Suivant</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainDiv" id="SportTags">
+        <div class="mainCategorieTitle">
+            <img src="/ressources/img/tags/2.png" alt="">
+            <p class="titleOftag">Sport</p>
+            <p class="tagLegend">sélectionne 3 tags ou plus</p>
+        </div>
+        <div class="tags">
+            <p class="second">Football</p>
+            <p class="first">sport extrêmes</p>
+            <p class="third">Basketball</p>
+            <p class="second">Sport en équipe</p>
+            <p class="first">Sport solo</p>
+            <p class="fourth">Handball</p>
+            <p class="third">Volley</p>
+            <p class="second">Skate</p>
+            <p class="fourth">Tennis</p>
+            <p class="first">Badminton</p>
+            <p class="fourth">Équitation</p>
+            <p class="third">Judo</p>
+            <p class="third">Rugby</p>
+            <p class="second">E-sport</p>
+            <p class="fourth">Voleyball</p>
+            <p class="first">Surf</p>
+            <p class="fourth">Ping-pong</p>
+            <p class="second">Natation</p>
+            <p class="fourth">Athlétisme</p>
+            <p class="third">Boxe</p>
+            <p class="second">Danse</p>
+            <p class="fourth">Golf</p>
+            <p class="first">Pétanque</p>
+            <p class="third">Prognostique sportif</p>
+            <p class="first">Longboard</p>
+        </div>
+        <div class="tagsButton">
+            <div class="wthBtn" class="buttonEntrance">
+                <div class="bordBtn">
+                    <a class="innerBtn">Suivant</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainDiv" id="DiscoveryTags">
+        <div class="mainCategorieTitle">
+            <img src="/ressources/img/tags/1.png" alt="">
+            <p class="titleOftag">Découverte & Bien-être</p>
+            <p class="tagLegend">sélectionne 3 tags ou plus</p>
+        </div>
+        <div class="tags">
+            <p class="first">Motivation</p>
+            <p class="second">Développement personnel</p>
+            <p class="third">Voyage</p>
+            <p class="second">Culture</p>
+            <p class="second">Exposition</p>
+            <p class="third">Jeu de rôle</p>
+            <p class="first">Street food</p>
+            <p class="second">Sorties</p>
+            <p class="third">Big dreamer</p>
+            <p class="fourth">Astrologie</p>
+            <p class="fourth">Spiritualité</p>
+            <p class="first">Yoga</p>
+            <p class="first">Body positive</p>
+            <p class="second">Vegan</p>
+            <p class="fourth">Échange linguistique</p>
+            <p class="third">Festivals</p>
+            <p class="fourth">Bonnes adresses</p>
+            <p class="first">Feminisme</p>
+            <p class="third">Road Trip</p>
+            <p class="second">Paranormal</p>
+            <p class="first">Frisson</p>
+            <p class="fourth">Soirées</p>
+        </div>
+        <div class="tagsButton">
+            <div class="wthBtn" class="buttonEntrance">
+                <div class="bordBtn">
+                    <a class="innerBtn">Suivant</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainDiv" id="HobbyTags">
+        <div class="mainCategorieTitle">
+            <img src="/ressources/img/tags/1.png" alt="">
+            <p class="titleOftag">Hobbies</p>
+            <p class="tagLegend">sélectionne 3 tags ou plus</p>
+        </div>
+        <div class="tags">
             <p class="first">Engagée</p>
-            <p class="third">Spiritualité</p>
-            <p class="fourth">Gamer</p>
-            <p class="first">Jeux de rôle</p>
+            <p class="third">Planet I care</p>
+            <p class="second">LGBTQ+</p>
+            <p class="fourth">Netflix</p>
+            <p class="first">Manga</p>
+            <p class="fourth">Beauté</p>
+            <p class="second">Histoires drôles</p>
+            <p class="fourth">sneakers addict</p>
+            <p class="third">Challenge</p>
+            <p class="fourth">Mélomane</p>
+            <p class="first">Animaux</p>
+            <p class="second">Lecture</p>
+            <p class="third">Jeux de société</p>
+            <p class="fourth">Jardinage</p>
+            <p class="fourth">Échecs</p>
+            <p class="third">Humour</p>
+            <p class="second">Nouvelles technologies</p>
+            <p class="first">Cosplay</p>
+            <p class="third">Urbex</p>
+            <p class="first">Parkour</p>
+            <p class="second">Animaux</p>
+        </div>
+        <div class="tagsButton">
+            <div class="wthBtn" class="buttonEntrance">
+                <div class="bordBtn">
+                    <a class="innerBtn">Suivant</a>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="mainDiv" id="cantWaitToThrill">
-        <h2 class="h2EnterAnim">On a hâte de vibrer avec toi !</h2>
+        <h2 class="h2EnterAnim">on a hâte de vibrer avec toi !</h2>
     </div>
 
     <div class="mainDiv" id="whatBadge">
-        <h2 class="h2EnterAnim">Tu le veux comment ton badge ?</h2>
-        <div id="badgesList">
-            <img class="badge" src="/ressources/img/badges/badge1.png" alt="">
-            <img class="badge" src="/ressources/img/badges/badge2.png" alt="">
-            <img class="badge" src="/ressources/img/badges/badge3.png" alt="">
-            <img class="badge" src="/ressources/img/badges/badge4.png" alt="">
-        </div>
+        <h2 class="h2EnterAnim">tu le veux comment <span>ton badge</span> ?</h2>
+        <form action="#" method="POST">
+            <div id="badgesList">
+                <div class="badgeRadio badgeEntranceLeft">
+                    <input type="radio" id="Badge1" class="Badge" name="Badge" value="Badge1" checked>
+                    <label for="Badge1"> <img class="badgeImg selectedBadge" src="/ressources/img/badges/badge1.png"
+                            alt=""></label>
+                </div>
+                <div class="badgeRadio badgeEntranceLeft">
+                    <input type="radio" id="Badge2" class="Badge" name="Badge" value="Badge2">
+                    <label for="Badge2"><img class="badgeImg" src="/ressources/img/badges/badge2.png" alt=""></label>
+                </div>
+                <div class="badgeRadio badgeEntranceRight">
+                    <input type="radio" id="Badge3" class="Badge" name="Badge" value="Badge3">
+                    <label for="Badge3"><img class="badgeImg" src="/ressources/img/badges/badge3.png" alt=""></label>
+                </div>
+                <div class="badgeRadio badgeEntranceRight">
+                    <input type="radio" id="Badge4" class="Badge" name="Badge" value="Badge4">
+                    <label for="Badge4"><img class="badgeImg" src="/ressources/img/badges/badge4.png" alt=""></label>
+                </div>
+            </div>
+
+            <div id="badgeButton">
+                <div class="wthBtn" class="buttonEntrance">
+                    <div class="bordBtn">
+                        <input type="submit" class="innerBtn" value="Je valide">
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
     <div class="mainDiv" id="goodChoice">
-        <h2 class="h2EnterAnim">Très bon choix !</h2>
+        <h2 class="h2EnterAnim">très bon choix !</h2>
     </div>
 
     <div class="mainDiv" id="whatMail">
-        <h2 class="h2EnterAnim">C'est quoi ton mail ?</h2>
+        <h2 class="h2EnterAnim">c'est quoi ton <span>mail</span> ?</h2>
         <form>
             <input type="text" placeholder="Mon mail">
             <div class="wthBtn" class="buttonEntrance">
@@ -454,17 +681,279 @@
     </div>
 
     <div class="mainDiv" id="prepareProfile">
-        <h2 class="h2EnterAnim">C’est tout bon,<br> on prépare ton profil !</h2>
+        <h2 class="h2EnterAnim">c’est tout bon, on prépare <span>ton profil</span> !</h2>
+        <div id="prgressBarBckgrnd">
+            <div id="progressBar" class="progressBarAnim">
+            </div>
+        </div>
+    </div>
+
+    <div class="mainDiv" id="comeOn2022">
+        <img class="bille imgBefirstAnim1" id="bille1" src="/ressources/img/billes/1.png" alt="">
+        <img class="bille imgBefirstAnim3" id="bille2" src="/ressources/img/billes/2.png" alt="">
+        <img class="bille imgBefirstAnim4" id="bille3" src="/ressources/img/billes/3.png" alt="">
+        <img class="bille imgBefirstAnim2" id="bille4" src="/ressources/img/billes/4.png" alt="">
+        <img class="bille imgBefirstAnim4" id="bille5" src="/ressources/img/billes/5.png" alt="">
+        <img class="bille imgBefirstAnim1" id="bille6" src="/ressources/img/billes/6.png" alt="">
+        <img class="bille imgBefirstAnim3" id="bille7" src="/ressources/img/billes/7.png" alt="">
+        <img class="bille imgBefirstAnim2" id="bille8" src="/ressources/img/billes/8.png" alt="">
+        <div>
+            <div id="logo">
+                <img src="/ressources/img/Union.png" alt="Splitch logo">
+            </div>
+
+            <!-- <div id="SVGLogo2">
+                <svg width="664" height="217" viewBox="0 0 664 217" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="">
+                    <g id="splitch">
+                        <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0" y="0" width="664" height="217"
+                            fill="black">
+                            <path fill="white" width="664" height="217" d="M0 0 L664 0 L664 217 L0 217 Z"
+                                class="cisdKQVO_0">
+                            </path>
+                            <path
+                                d="M5 147.775C5 143.448 6.5665 139.719 9.69949 136.586C12.8325 133.453 16.5622 131.886 20.8888 131.886C23.1266 131.886 25.3645 132.408 27.6023 133.453C38.7916 138.525 48.3397 141.061 56.2468 141.061C63.4079 141.061 66.9885 139.346 66.9885 135.914C66.9885 134.273 65.8696 133.005 63.6317 132.11C61.3939 131.215 57.4403 130.394 51.7711 129.648C43.1181 128.604 35.584 127.112 29.1688 125.173C13.5038 120.548 5.67136 110.328 5.67136 94.5141C5.67136 84.22 10.0725 75.4923 18.8747 68.3312C27.6769 61.1701 39.3883 57.5895 54.009 57.5895C66.0934 57.5895 77.581 60.0512 88.4719 64.9744C94.4395 67.6599 97.4233 72.1356 97.4233 78.4016C97.4233 82.4297 95.9314 85.9357 92.9476 88.9195C90.113 91.7541 86.6816 93.1714 82.6535 93.1714C80.2664 93.1714 78.1778 92.7238 76.3875 91.8287C69.2264 88.2481 61.8414 86.4578 54.2327 86.4578C47.5192 86.4578 44.1624 88.0243 44.1624 91.1573C44.1624 93.8427 48.7873 95.8568 58.0371 97.1995C67.4361 98.5422 75.1194 100.183 81.087 102.123C88.2481 104.062 94.0665 107.717 98.5422 113.088C103.167 118.31 105.48 125.247 105.48 133.9C105.48 144.791 100.78 153.743 91.3811 160.755C82.1313 167.617 69.7485 171.049 54.2327 171.049C40.0597 171.049 26.7818 168.139 14.399 162.321C11.7136 161.127 9.4757 159.188 7.68542 156.503C5.89514 153.817 5 150.908 5 147.775Z"
+                                class="cisdKQVO_1"></path>
+                            <path
+                                d="M233.761 114.207C233.761 131.961 229.36 145.91 220.558 156.055C211.755 166.051 200.342 171.049 186.318 171.049C174.383 171.049 164.238 166.349 155.884 156.95V191.637C155.884 197.157 153.87 201.856 149.841 205.735C145.963 209.763 141.263 211.778 135.743 211.778C130.223 211.778 125.449 209.763 121.421 205.735C117.542 201.856 115.602 197.157 115.602 191.637V78.1778C115.602 72.2102 117.467 67.2123 121.197 63.1842C125.076 59.0068 129.925 56.9182 135.743 56.9182C140.368 56.9182 144.545 58.3355 148.275 61.1701C152.005 63.8555 154.541 67.3615 155.884 71.688C163.642 62.289 173.787 57.5895 186.318 57.5895C200.342 57.5895 211.755 62.662 220.558 72.8069C229.36 82.8027 233.761 96.6027 233.761 114.207ZM192.584 114.207C192.584 107.941 190.645 102.869 186.766 98.9898C183.036 95.1108 178.262 93.1714 172.444 93.1714C169.609 93.1714 166.551 93.8427 163.269 95.1854C160.136 96.5282 157.674 98.3184 155.884 100.556V128.082C157.525 130.171 159.986 131.961 163.269 133.453C166.551 134.795 169.609 135.467 172.444 135.467C178.262 135.467 183.036 133.527 186.766 129.648C190.645 125.769 192.584 120.622 192.584 114.207Z"
+                                class="cisdKQVO_2"></path>
+                            <path
+                                d="M244.218 150.46V37.0013C244.218 31.4813 246.157 26.7818 250.036 22.9028C254.064 18.8747 258.838 16.8606 264.358 16.8606C269.878 16.8606 274.578 18.8747 278.457 22.9028C282.485 26.7818 284.499 31.4813 284.499 37.0013V150.46C284.499 155.98 282.485 160.755 278.457 164.783C274.578 168.662 269.878 170.601 264.358 170.601C258.838 170.601 254.064 168.662 250.036 164.783C246.157 160.755 244.218 155.98 244.218 150.46Z"
+                                class="cisdKQVO_3"></path>
+                            <path
+                                d="M306.491 43.7148C302.165 39.2391 300.001 33.8683 300.001 27.6023C300.001 21.3363 302.165 16.0401 306.491 11.7136C310.967 7.23785 316.338 5 322.604 5C328.87 5 334.166 7.23785 338.492 11.7136C342.968 16.0401 345.206 21.3363 345.206 27.6023C345.206 33.8683 342.968 39.2391 338.492 43.7148C334.166 48.0414 328.87 50.2046 322.604 50.2046C316.338 50.2046 310.967 48.0414 306.491 43.7148ZM302.463 150.46V78.1778C302.463 72.6577 304.402 67.9582 308.281 64.0793C312.31 60.0512 317.084 58.0371 322.604 58.0371C328.124 58.0371 332.823 60.0512 336.702 64.0793C340.73 67.9582 342.744 72.6577 342.744 78.1778V150.46C342.744 155.98 340.73 160.755 336.702 164.783C332.823 168.662 328.124 170.601 322.604 170.601C317.084 170.601 312.31 168.662 308.281 164.783C304.402 160.755 302.463 155.98 302.463 150.46Z"
+                                class="cisdKQVO_4"></path>
+                            <path
+                                d="M432.991 153.146C432.991 157.174 431.723 160.755 429.187 163.888C426.65 166.871 423.368 168.811 419.34 169.706C415.461 170.601 411.06 171.049 406.137 171.049C394.052 171.049 384.803 168.214 378.387 162.545C372.121 156.726 368.988 148.223 368.988 137.033V95.1854H366.303C361.529 95.1854 357.426 93.4698 353.995 90.0384C350.563 86.607 348.848 82.5043 348.848 77.7302C348.848 72.9561 350.563 68.8534 353.995 65.422C357.426 61.9906 361.529 60.275 366.303 60.275H368.988V48.6381C368.988 43.1181 370.928 38.4186 374.807 34.5396C378.835 30.5115 383.609 28.4975 389.129 28.4975C394.649 28.4975 399.349 30.5115 403.228 34.5396C407.256 38.4186 409.27 43.1181 409.27 48.6381V60.275H415.983C420.757 60.275 424.86 61.9906 428.292 65.422C431.723 68.8534 433.439 72.9561 433.439 77.7302C433.439 82.5043 431.723 86.607 428.292 90.0384C424.86 93.4698 420.757 95.1854 415.983 95.1854H409.27V125.396C409.27 128.082 410.016 130.394 411.508 132.334C413 134.273 414.939 135.318 417.326 135.467L419.34 135.691C423.368 136.138 426.65 138.078 429.187 141.509C431.723 144.791 432.991 148.67 432.991 153.146Z"
+                                class="cisdKQVO_5"></path>
+                            <path
+                                d="M494.943 57.5895C506.132 57.5895 515.979 59.8274 524.482 64.3031C531.047 67.8836 534.329 73.1799 534.329 80.1918C534.329 85.1151 532.539 89.367 528.958 92.9476C525.527 96.379 521.349 98.0947 516.426 98.0947C512.995 98.0947 510.086 97.3487 507.699 95.8568C504.566 94.0665 500.91 93.1714 496.733 93.1714C490.616 93.1714 485.544 95.0363 481.516 98.766C477.488 102.496 475.473 107.643 475.473 114.207C475.473 120.772 477.488 125.993 481.516 129.872C485.544 133.602 490.616 135.467 496.733 135.467C500.761 135.467 504.342 134.572 507.475 132.781C510.459 131.14 513.368 130.32 516.202 130.32C521.126 130.32 525.303 132.11 528.734 135.691C532.315 139.122 534.105 143.374 534.105 148.446C534.105 155.458 530.898 160.755 524.482 164.335C515.979 168.811 506.132 171.049 494.943 171.049C477.637 171.049 463.165 165.827 451.528 155.384C440.041 144.791 434.297 131.066 434.297 114.207C434.297 97.4979 440.041 83.9216 451.528 73.4783C463.165 62.8858 477.637 57.5895 494.943 57.5895Z"
+                                class="cisdKQVO_6"></path>
+                            <path
+                                d="M618.567 150.46V108.165C618.567 98.1692 613.345 93.1714 602.902 93.1714C596.337 93.1714 590.594 96.006 585.67 101.675V150.46C585.67 155.98 583.656 160.755 579.628 164.783C575.749 168.662 571.05 170.601 565.53 170.601C560.01 170.601 555.235 168.662 551.207 164.783C547.328 160.755 545.389 155.98 545.389 150.46V37.0013C545.389 31.4813 547.328 26.7818 551.207 22.9028C555.235 18.8747 560.01 16.8606 565.53 16.8606C571.05 16.8606 575.749 18.8747 579.628 22.9028C583.656 26.7818 585.67 31.4813 585.67 37.0013V72.5831C594.622 62.5874 607.004 57.5895 622.819 57.5895C634.455 57.5895 643.332 60.6479 649.449 66.7647C655.715 72.7323 658.848 80.8632 658.848 91.1573V150.46C658.848 155.98 656.834 160.755 652.806 164.783C648.927 168.662 644.227 170.601 638.707 170.601C633.187 170.601 628.413 168.662 624.385 164.783C620.506 160.755 618.567 155.98 618.567 150.46Z"
+                                class="cisdKQVO_7"></path>
+                        </mask>
+                        <path
+                            d="M5 147.775C5 143.448 6.5665 139.719 9.69949 136.586C12.8325 133.453 16.5622 131.886 20.8888 131.886C23.1266 131.886 25.3645 132.408 27.6023 133.453C38.7916 138.525 48.3397 141.061 56.2468 141.061C63.4079 141.061 66.9885 139.346 66.9885 135.914C66.9885 134.273 65.8696 133.005 63.6317 132.11C61.3939 131.215 57.4403 130.394 51.7711 129.648C43.1181 128.604 35.584 127.112 29.1688 125.173C13.5038 120.548 5.67136 110.328 5.67136 94.5141C5.67136 84.22 10.0725 75.4923 18.8747 68.3312C27.6769 61.1701 39.3883 57.5895 54.009 57.5895C66.0934 57.5895 77.581 60.0512 88.4719 64.9744C94.4395 67.6599 97.4233 72.1356 97.4233 78.4016C97.4233 82.4297 95.9314 85.9357 92.9476 88.9195C90.113 91.7541 86.6816 93.1714 82.6535 93.1714C80.2664 93.1714 78.1778 92.7238 76.3875 91.8287C69.2264 88.2481 61.8414 86.4578 54.2327 86.4578C47.5192 86.4578 44.1624 88.0243 44.1624 91.1573C44.1624 93.8427 48.7873 95.8568 58.0371 97.1995C67.4361 98.5422 75.1194 100.183 81.087 102.123C88.2481 104.062 94.0665 107.717 98.5422 113.088C103.167 118.31 105.48 125.247 105.48 133.9C105.48 144.791 100.78 153.743 91.3811 160.755C82.1313 167.617 69.7485 171.049 54.2327 171.049C40.0597 171.049 26.7818 168.139 14.399 162.321C11.7136 161.127 9.4757 159.188 7.68542 156.503C5.89514 153.817 5 150.908 5 147.775Z"
+                            stroke="url(#paint0_radial)" stroke-width="10" mask="url(#path-1-outside-1)"
+                            class="cisdKQVO_8">
+                        </path>
+                        <path
+                            d="M233.761 114.207C233.761 131.961 229.36 145.91 220.558 156.055C211.755 166.051 200.342 171.049 186.318 171.049C174.383 171.049 164.238 166.349 155.884 156.95V191.637C155.884 197.157 153.87 201.856 149.841 205.735C145.963 209.763 141.263 211.778 135.743 211.778C130.223 211.778 125.449 209.763 121.421 205.735C117.542 201.856 115.602 197.157 115.602 191.637V78.1778C115.602 72.2102 117.467 67.2123 121.197 63.1842C125.076 59.0068 129.925 56.9182 135.743 56.9182C140.368 56.9182 144.545 58.3355 148.275 61.1701C152.005 63.8555 154.541 67.3615 155.884 71.688C163.642 62.289 173.787 57.5895 186.318 57.5895C200.342 57.5895 211.755 62.662 220.558 72.8069C229.36 82.8027 233.761 96.6027 233.761 114.207ZM192.584 114.207C192.584 107.941 190.645 102.869 186.766 98.9898C183.036 95.1108 178.262 93.1714 172.444 93.1714C169.609 93.1714 166.551 93.8427 163.269 95.1854C160.136 96.5282 157.674 98.3184 155.884 100.556V128.082C157.525 130.171 159.986 131.961 163.269 133.453C166.551 134.795 169.609 135.467 172.444 135.467C178.262 135.467 183.036 133.527 186.766 129.648C190.645 125.769 192.584 120.622 192.584 114.207Z"
+                            stroke="url(#paint1_radial)" stroke-width="10" mask="url(#path-1-outside-1)"
+                            class="cisdKQVO_9">
+                        </path>
+                        <path
+                            d="M244.218 150.46V37.0013C244.218 31.4813 246.157 26.7818 250.036 22.9028C254.064 18.8747 258.838 16.8606 264.358 16.8606C269.878 16.8606 274.578 18.8747 278.457 22.9028C282.485 26.7818 284.499 31.4813 284.499 37.0013V150.46C284.499 155.98 282.485 160.755 278.457 164.783C274.578 168.662 269.878 170.601 264.358 170.601C258.838 170.601 254.064 168.662 250.036 164.783C246.157 160.755 244.218 155.98 244.218 150.46Z"
+                            stroke="url(#paint2_radial)" stroke-width="10" mask="url(#path-1-outside-1)"
+                            class="cisdKQVO_10">
+                        </path>
+                        <path
+                            d="M306.491 43.7148C302.165 39.2391 300.001 33.8683 300.001 27.6023C300.001 21.3363 302.165 16.0401 306.491 11.7136C310.967 7.23785 316.338 5 322.604 5C328.87 5 334.166 7.23785 338.492 11.7136C342.968 16.0401 345.206 21.3363 345.206 27.6023C345.206 33.8683 342.968 39.2391 338.492 43.7148C334.166 48.0414 328.87 50.2046 322.604 50.2046C316.338 50.2046 310.967 48.0414 306.491 43.7148ZM302.463 150.46V78.1778C302.463 72.6577 304.402 67.9582 308.281 64.0793C312.31 60.0512 317.084 58.0371 322.604 58.0371C328.124 58.0371 332.823 60.0512 336.702 64.0793C340.73 67.9582 342.744 72.6577 342.744 78.1778V150.46C342.744 155.98 340.73 160.755 336.702 164.783C332.823 168.662 328.124 170.601 322.604 170.601C317.084 170.601 312.31 168.662 308.281 164.783C304.402 160.755 302.463 155.98 302.463 150.46Z"
+                            stroke="url(#paint3_radial)" stroke-width="10" mask="url(#path-1-outside-1)"
+                            class="cisdKQVO_11">
+                        </path>
+                        <path
+                            d="M432.991 153.146C432.991 157.174 431.723 160.755 429.187 163.888C426.65 166.871 423.368 168.811 419.34 169.706C415.461 170.601 411.06 171.049 406.137 171.049C394.052 171.049 384.803 168.214 378.387 162.545C372.121 156.726 368.988 148.223 368.988 137.033V95.1854H366.303C361.529 95.1854 357.426 93.4698 353.995 90.0384C350.563 86.607 348.848 82.5043 348.848 77.7302C348.848 72.9561 350.563 68.8534 353.995 65.422C357.426 61.9906 361.529 60.275 366.303 60.275H368.988V48.6381C368.988 43.1181 370.928 38.4186 374.807 34.5396C378.835 30.5115 383.609 28.4975 389.129 28.4975C394.649 28.4975 399.349 30.5115 403.228 34.5396C407.256 38.4186 409.27 43.1181 409.27 48.6381V60.275H415.983C420.757 60.275 424.86 61.9906 428.292 65.422C431.723 68.8534 433.439 72.9561 433.439 77.7302C433.439 82.5043 431.723 86.607 428.292 90.0384C424.86 93.4698 420.757 95.1854 415.983 95.1854H409.27V125.396C409.27 128.082 410.016 130.394 411.508 132.334C413 134.273 414.939 135.318 417.326 135.467L419.34 135.691C423.368 136.138 426.65 138.078 429.187 141.509C431.723 144.791 432.991 148.67 432.991 153.146Z"
+                            stroke="url(#paint4_radial)" stroke-width="10" mask="url(#path-1-outside-1)"
+                            class="cisdKQVO_12">
+                        </path>
+                        <path
+                            d="M494.943 57.5895C506.132 57.5895 515.979 59.8274 524.482 64.3031C531.047 67.8836 534.329 73.1799 534.329 80.1918C534.329 85.1151 532.539 89.367 528.958 92.9476C525.527 96.379 521.349 98.0947 516.426 98.0947C512.995 98.0947 510.086 97.3487 507.699 95.8568C504.566 94.0665 500.91 93.1714 496.733 93.1714C490.616 93.1714 485.544 95.0363 481.516 98.766C477.488 102.496 475.473 107.643 475.473 114.207C475.473 120.772 477.488 125.993 481.516 129.872C485.544 133.602 490.616 135.467 496.733 135.467C500.761 135.467 504.342 134.572 507.475 132.781C510.459 131.14 513.368 130.32 516.202 130.32C521.126 130.32 525.303 132.11 528.734 135.691C532.315 139.122 534.105 143.374 534.105 148.446C534.105 155.458 530.898 160.755 524.482 164.335C515.979 168.811 506.132 171.049 494.943 171.049C477.637 171.049 463.165 165.827 451.528 155.384C440.041 144.791 434.297 131.066 434.297 114.207C434.297 97.4979 440.041 83.9216 451.528 73.4783C463.165 62.8858 477.637 57.5895 494.943 57.5895Z"
+                            stroke="url(#paint5_radial)" stroke-width="10" mask="url(#path-1-outside-1)"
+                            class="cisdKQVO_13">
+                        </path>
+                        <path
+                            d="M618.567 150.46V108.165C618.567 98.1692 613.345 93.1714 602.902 93.1714C596.337 93.1714 590.594 96.006 585.67 101.675V150.46C585.67 155.98 583.656 160.755 579.628 164.783C575.749 168.662 571.05 170.601 565.53 170.601C560.01 170.601 555.235 168.662 551.207 164.783C547.328 160.755 545.389 155.98 545.389 150.46V37.0013C545.389 31.4813 547.328 26.7818 551.207 22.9028C555.235 18.8747 560.01 16.8606 565.53 16.8606C571.05 16.8606 575.749 18.8747 579.628 22.9028C583.656 26.7818 585.67 31.4813 585.67 37.0013V72.5831C594.622 62.5874 607.004 57.5895 622.819 57.5895C634.455 57.5895 643.332 60.6479 649.449 66.7647C655.715 72.7323 658.848 80.8632 658.848 91.1573V150.46C658.848 155.98 656.834 160.755 652.806 164.783C648.927 168.662 644.227 170.601 638.707 170.601C633.187 170.601 628.413 168.662 624.385 164.783C620.506 160.755 618.567 155.98 618.567 150.46Z"
+                            stroke="url(#paint6_radial)" stroke-width="10" mask="url(#path-1-outside-1)"
+                            class="cisdKQVO_14">
+                        </path>
+                    </g>
+                    <defs>
+                        <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(149 -79) rotate(34.8077) scale(547.455 1731.1)">
+                            <stop stop-color="#FF0099"></stop>
+                            <stop offset="0.514512" stop-color="#793AFF"></stop>
+                            <stop offset="1" stop-color="#00D1FF"></stop>
+                        </radialGradient>
+                        <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(149 -79) rotate(34.8077) scale(547.455 1731.1)">
+                            <stop stop-color="#FF0099"></stop>
+                            <stop offset="0.514512" stop-color="#793AFF"></stop>
+                            <stop offset="1" stop-color="#00D1FF"></stop>
+                        </radialGradient>
+                        <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(149 -79) rotate(34.8077) scale(547.455 1731.1)">
+                            <stop stop-color="#FF0099"></stop>
+                            <stop offset="0.514512" stop-color="#793AFF"></stop>
+                            <stop offset="1" stop-color="#00D1FF"></stop>
+                        </radialGradient>
+                        <radialGradient id="paint3_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(149 -79) rotate(34.8077) scale(547.455 1731.1)">
+                            <stop stop-color="#FF0099"></stop>
+                            <stop offset="0.514512" stop-color="#793AFF"></stop>
+                            <stop offset="1" stop-color="#00D1FF"></stop>
+                        </radialGradient>
+                        <radialGradient id="paint4_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(149 -79) rotate(34.8077) scale(547.455 1731.1)">
+                            <stop stop-color="#FF0099"></stop>
+                            <stop offset="0.514512" stop-color="#793AFF"></stop>
+                            <stop offset="1" stop-color="#00D1FF"></stop>
+                        </radialGradient>
+                        <radialGradient id="paint5_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(149 -79) rotate(34.8077) scale(547.455 1731.1)">
+                            <stop stop-color="#FF0099"></stop>
+                            <stop offset="0.514512" stop-color="#793AFF"></stop>
+                            <stop offset="1" stop-color="#00D1FF"></stop>
+                        </radialGradient>
+                        <radialGradient id="paint6_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(149 -79) rotate(34.8077) scale(547.455 1731.1)">
+                            <stop stop-color="#FF0099"></stop>
+                            <stop offset="0.514512" stop-color="#793AFF"></stop>
+                            <stop offset="1" stop-color="#00D1FF"></stop>
+                        </radialGradient>
+                    </defs>
+                    <style data-made-with="vivus-instant">
+                        .cisdKQVO_0 {
+                            stroke-dasharray: 1762 1764;
+                            stroke-dashoffset: 1763;
+                            animation: cisdKQVO_draw 2000ms ease 0ms forwards;
+                        }
+
+                        .cisdKQVO_1 {
+                            stroke-dasharray: 557 559;
+                            stroke-dashoffset: 558;
+                            animation: cisdKQVO_draw 2000ms ease 71ms forwards;
+                        }
+
+                        .cisdKQVO_2 {
+                            stroke-dasharray: 638 640;
+                            stroke-dashoffset: 639;
+                            animation: cisdKQVO_draw 2000ms ease 142ms forwards;
+                        }
+
+                        .cisdKQVO_3 {
+                            stroke-dasharray: 354 356;
+                            stroke-dashoffset: 355;
+                            animation: cisdKQVO_draw 2000ms ease 214ms forwards;
+                        }
+
+                        .cisdKQVO_4 {
+                            stroke-dasharray: 414 416;
+                            stroke-dashoffset: 415;
+                            animation: cisdKQVO_draw 2000ms ease 285ms forwards;
+                        }
+
+                        .cisdKQVO_5 {
+                            stroke-dasharray: 422 424;
+                            stroke-dashoffset: 423;
+                            animation: cisdKQVO_draw 2000ms ease 357ms forwards;
+                        }
+
+                        .cisdKQVO_6 {
+                            stroke-dasharray: 452 454;
+                            stroke-dashoffset: 453;
+                            animation: cisdKQVO_draw 2000ms ease 428ms forwards;
+                        }
+
+                        .cisdKQVO_7 {
+                            stroke-dasharray: 632 634;
+                            stroke-dashoffset: 633;
+                            animation: cisdKQVO_draw 2000ms ease 500ms forwards;
+                        }
+
+                        .cisdKQVO_8 {
+                            stroke-dasharray: 557 559;
+                            stroke-dashoffset: 558;
+                            animation: cisdKQVO_draw 2000ms ease 571ms forwards;
+                        }
+
+                        .cisdKQVO_9 {
+                            stroke-dasharray: 638 640;
+                            stroke-dashoffset: 639;
+                            animation: cisdKQVO_draw 2000ms ease 642ms forwards;
+                        }
+
+                        .cisdKQVO_10 {
+                            stroke-dasharray: 354 356;
+                            stroke-dashoffset: 355;
+                            animation: cisdKQVO_draw 2000ms ease 714ms forwards;
+                        }
+
+                        .cisdKQVO_11 {
+                            stroke-dasharray: 414 416;
+                            stroke-dashoffset: 415;
+                            animation: cisdKQVO_draw 2000ms ease 785ms forwards;
+                        }
+
+                        .cisdKQVO_12 {
+                            stroke-dasharray: 422 424;
+                            stroke-dashoffset: 423;
+                            animation: cisdKQVO_draw 2000ms ease 857ms forwards;
+                        }
+
+                        .cisdKQVO_13 {
+                            stroke-dasharray: 452 454;
+                            stroke-dashoffset: 453;
+                            animation: cisdKQVO_draw 2000ms ease 928ms forwards;
+                        }
+
+                        .cisdKQVO_14 {
+                            stroke-dasharray: 632 634;
+                            stroke-dashoffset: 633;
+                            animation: cisdKQVO_draw 2000ms ease 1000ms forwards;
+                        }
+
+                        @keyframes cisdKQVO_draw {
+                            100% {
+                                stroke-dashoffset: 0;
+                            }
+                        }
+
+                        @keyframes cisdKQVO_fade {
+                            0% {
+                                stroke-opacity: 1;
+                            }
+
+                            94.44444444444444% {
+                                stroke-opacity: 1;
+                            }
+
+                            100% {
+                                stroke-opacity: 0;
+                            }
+                        }
+                    </style>
+                </svg>
+            </div> -->
+            <div id="SVGLogo2"><img src="/ressources/img/splitchLogoImg.png" alt=""></div>
+            <h2>arrive dès 2022</h2>
+        </div>
+    </div>
+
+    <div class="mainDiv" id="lastThing">
+        <h2 class="h2EnterAnim">ah une dernière chose...</h2>
     </div>
 
     <div class="mainDiv" id="followUs">
-        <h2 class="h2EnterAnim">ah une dernière chose...<br> viens nous follow !</h2>
+        <h2 class="h2EnterAnim">viens nous follow pour<br>suivre <span>nos aventures</span> !</h2>
+        <div id="followButton">
+            <div class="wthBtn" class="buttonEntrance">
+                <div class="bordBtn">
+                    <a class="innerBtn" href="https://www.instagram.com/splitch_app/">Je follow</a>
+                </div>
+            </div>
+        </div>
+        <h2 id="thank">merci</h2>
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
     <script src="/scripts/navigation.js"></script>
+
 </body>
 
 </html>
