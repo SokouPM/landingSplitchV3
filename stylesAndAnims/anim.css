@@ -14,7 +14,6 @@
     }
 }
 
-
 .h2EnterAnim {
     overflow: hidden;
     white-space: nowrap;
@@ -29,7 +28,6 @@
         width: 100%;
     }
 }
-
 
 /******************************** home Page ********************************/
 
@@ -293,20 +291,35 @@
 }
 
 /******************************** connect Page ********************************/
+
 .connectImgEnterBottomRight {
     animation: connectImgEnterBottomRight 1s ease 0s 1 normal forwards;
 }
 
 @keyframes connectImgEnterBottomRight {
-  0% {
-    opacity: 0;
-    transform: translate(250px, 250px);
-  }
+    0% {
+        opacity: 0;
+        transform: translate(250px, 250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
 
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+.connectImgEnterTopRight {
+    animation: connectImgEnterTopRight 1s ease 0s 1 normal forwards;
+}
+
+@keyframes connectImgEnterTopRight {
+    0% {
+        opacity: 0;
+        transform: translate(100px, -250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .connectImgEnterTop {
@@ -314,15 +327,14 @@
 }
 
 @keyframes connectImgEnterTop {
-  0% {
-    opacity: 0;
-    transform: translate(-100px, -250px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+    0% {
+        opacity: 0;
+        transform: translate(0, -250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .connectImgEnterBottomLeft {
@@ -330,15 +342,14 @@
 }
 
 @keyframes connectImgEnterBottomLeft {
-  0% {
-    opacity: 0;
-    transform: translate(-250px, 250px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+    0% {
+        opacity: 0;
+        transform: translate(-250px, 250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 /******************************** beFirst Page ********************************/
@@ -499,16 +510,15 @@
 
 /******************************** enterInGame Page ********************************/
 
-
 /******************************** reserve Page ********************************/
 
 #pic {
     width: max-content;
     margin: 0 auto;
-    animation: myAnim 0.8s ease 0s normal both;
+    animation: pic 0.8s ease 0s normal both;
 }
 
-@keyframes myAnim {
+@keyframes pic {
     0% {
         transform: scale(2) rotate(20deg) translate(-97px, -216px);
         transform-origin: -50% 0;
@@ -541,6 +551,25 @@ input[type="text"] {
 
 /******************************** whatYouThrill Page ********************************/
 
+.popupMainTag {
+    animation: popupMainTag 0.5s ease 1s 1 normal forwards;
+}
+
+@keyframes popupMainTag {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 /******************************** tags Page ********************************/
 
 .appear {
@@ -566,16 +595,14 @@ input[type="text"] {
 
 @keyframes badgeEntranceLeft {
     0% {
-      opacity: 0;
-      transform: translateX(-250px);
+        opacity: 0;
+        transform: translateX(-250px);
     }
-  
     100% {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
 }
-
 
 .badgeEntranceRight {
     animation: badgeEntranceRight 1s ease 0s 1 normal forwards;
@@ -583,20 +610,19 @@ input[type="text"] {
 
 @keyframes badgeEntranceRight {
     0% {
-      opacity: 0;
-      transform: translateX(250px);
+        opacity: 0;
+        transform: translateX(250px);
     }
-  
     100% {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
 /******************************** prepareProfile Page ********************************/
 
 .progressBarAnim {
-   animation: progressBarAnim 2.5s ease 1s 1 normal forwards;
+    animation: progressBarAnim 2.5s ease 1s 1 normal forwards;
 }
 
 @keyframes progressBarAnim {

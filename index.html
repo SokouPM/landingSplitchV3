@@ -269,31 +269,32 @@
         <img class="bille imgBefirstAnim1" id="bille6" src="/ressources/img/billes/6.png" alt="">
         <img class="bille imgBefirstAnim3" id="bille7" src="/ressources/img/billes/7.png" alt="">
         <img class="bille imgBefirstAnim2" id="bille8" src="/ressources/img/billes/8.png" alt="">
-        <h2 class="h2EnterAnim">nous, c'est <span>splitch</span>.</h2>
+        <h2 class="h2EnterAnim">nous, c'est <span class="degradeH2">splitch</span>.</h2>
     </div>
 
     <div class="mainDiv" id="newSocialNetwork">
         <img id="phone" class="phoneAnimation" src="/ressources/img/phone.png" alt="">
-        <h2 class="h2EnterAnim">le nouveau <span>réseau social</span></h2>
+        <h2 class="h2EnterAnim">le nouveau <span class="degradeH2">réseau social</span></h2>
     </div>
 
     <div class="mainDiv" id="passion">
         <div id="ballon" class="ballonAnim"><img src="/ressources/img/basketball.png" alt="basketball"></div>
         <div id="shadow"><img src="/ressources/img/ellipse.png" alt=""></div>
-        <h2 class="h2EnterAnim">pour partager tes <span>passions</span>.</h2>
+        <h2 class="h2EnterAnim">pour partager tes <span class="degradeH2">passions</span>.</h2>
     </div>
 
-    <div class="mainDiv" id="howBasket">
+    <!-- <div class="mainDiv" id="howBasket">
         <img class="basketPlayerEntrance" id="basketPlayerImg" src="/ressources/img/basketPlayer.png" alt="">
         <div class="wthBtn" class="buttonEntrance">
             <div class="bordBtn">
                 <a class="innerBtn">Comment ?</a>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="mainDiv" id="exchange">
-        <h2 class="h2EnterAnim">échange, propose une sortie<br> ou lance un jeu.</h2>
+        <h2 class="h2EnterAnim"> <span id="exchangeDegrade">échange</span>, <span id="purposeDegrade">propose une
+                sortie</span><br>ou <span id="gameDegrade">lance un jeu</span>.</h2>
         <div id="iconsExchange">
             <img id="exchangeImg1" class="exchangeImg1EntranceAnim" src="/ressources/img/manet.png" alt="">
             <img id="exchangeImg2" class="exchangeImg2EntranceAnim" src="/ressources/img/dialog.png" alt="">
@@ -340,21 +341,31 @@
                 </ul>
             </div>
         </div>
-        <img id="background1" class="emotionBackgroundAppear" src="/ressources/img/slideBgd1.png" alt="">
-        <img id="background2" class="emotionBackgroundAppear" src="/ressources/img/slideBgd2.png" alt="">
+        <!-- <img id="background1" class="emotionBackgroundAppear" src="/ressources/img/slideBgd1.png" alt="">
+        <img id="background2" class="emotionBackgroundAppear" src="/ressources/img/slideBgd2.png" alt=""> -->
     </div>
 
     <div class="mainDiv" id="connect">
-        <img id="connectImg1" class="connectImg connectImgEnterBottomRight" src="/ressources/img/connectImg/1.png"
+        <img id="connectImg1" class="connectImg connectImgEnterTop" src="/ressources/img/connectImg/1.png"
             alt="">
-        <img id="connectImg2" class="connectImg connectImgEnterTop" src="/ressources/img/connectImg/2.png" alt="">
+        <img id="connectImg2" class="connectImg connectImgEnterTopRight" src="/ressources/img/connectImg/2.png" alt="">
         <img id="connectImg3" class="connectImg connectImgEnterBottomLeft" src="/ressources/img/connectImg/3.png"
             alt="">
-        <h2 class="h2EnterAnim"><span>connecte-toi</span> avec des gens<br> qui te ressemblent.</h2>
+        <img id="connectImg4" class="connectImg connectImgEnterTopRight" src="/ressources/img/connectImg/4.png" alt="">
+        <img id="connectImg5" class="connectImg connectImgEnterBottomRight" src="/ressources/img/connectImg/5.png" alt="">
+
+        <h2 class="h2EnterAnim"><span class="degradeH2">connecte-toi</span> avec des gens<br> qui te ressemblent.</h2>
+        <div id="btnConnect">
+            <div class="wthBtn" class="buttonEntrance">
+                <div class="bordBtn">
+                    <a class="innerBtn">Commencer</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="mainDiv" id="beFirst">
-        <h2 class="h2EnterAnim">fais partie<br> des <span>1 500 premiers</span> inscrits</h2>
+        <h2 class="h2EnterAnim">fais partie<br> des <span class="degradeH2">1 500 premiers</span> inscrits</h2>
 
         <img id="bckGrndImgBefirs1" class="beFirstImg imgBefirstEnterTopLeft" src="/ressources/img/beFirstImg/1.png"
             alt="">
@@ -394,7 +405,7 @@
     </div>
 
     <div class="mainDiv" id="toGetBadge">
-        <h2 class="h2EnterAnim">pour obtenir<br><span>ton badge exclusif</span> !</h2>
+        <h2 class="h2EnterAnim">pour obtenir<br><span class="degradeH2">ton badge exclusif</span> !</h2>
 
         <img id="bckGrndImgBefirs1" class="beFirstImg imgBefirstAnim1" src="/ressources/img/beFirstImg/1.png" alt="">
         <img id="bckGrndImgBefirs2" class="beFirstImg imgBefirstAnim2" src="/ressources/img/beFirstImg/2.png" alt="">
@@ -419,7 +430,7 @@
     </div>
 
     <div class="mainDiv" id="enterInGame">
-        <h2 class="h2EnterAnim">je rentre dans <span>le game</span></h2>
+        <h2 class="h2EnterAnim">je rentre dans <span class="degradeH2">le game</span></h2>
         <div>
             <div class="wthBtn" class="buttonEntrance">
                 <div class="bordBtn">
@@ -431,8 +442,9 @@
     </div>
 
     <div class="mainDiv" id="reserve">
+        <h3 class="step">- étape 1 -</h3>
         <img src="/ressources/img/pic.png" id="pic" alt="">
-        <h2 class="h2EnterAnim">réserve ton <span>pseudo</span> :</h2>
+        <h2 class="h2EnterAnim">réserve ton <span class="degradeH2">pseudo</span> :</h2>
         <form>
             <input type="text" placeholder="Mon nom c’est...">
             <div class="wthBtn" class="buttonEntrance">
@@ -448,28 +460,30 @@
     </div>
 
     <div class="mainDiv" id="whatYouThrill">
-        <h2 class="h2EnterAnim">qu’est ce qui te fait <span>vibrer</span> ?</h2>
+        <h3 class="step">- étape 2 -</h3>
+        <h2 class="h2EnterAnim">qu’est ce qui te fait <span class="degradeH2">vibrer</span> ?</h2>
         <div id="mainTagCategories">
             <div id="Creativity" class="mainCategorie">
-                <img src="/ressources/img/tags/1.png" alt="">
+                <img class="popupMainTag" src="/ressources/img/tags/1.png" alt="">
                 <p>Créativité</p>
             </div>
             <div id="Sport" class="mainCategorie">
-                <img src="/ressources/img/tags/2.png" alt="">
+                <img class="popupMainTag" src="/ressources/img/tags/2.png" alt="">
                 <p>Sport</p>
             </div>
             <div id="Discovery" class="mainCategorie">
-                <img src="/ressources/img/tags/3.png" alt="">
+                <img class="popupMainTag" src="/ressources/img/tags/3.png" alt="">
                 <p>Découverte<br>& Bien-être</p>
             </div>
             <div id="hobby" class="mainCategorie">
-                <img src="/ressources/img/tags/4.png" alt="">
+                <img class="popupMainTag" src="/ressources/img/tags/4.png" alt="">
                 <p>Hobbies</p>
             </div>
         </div>
     </div>
 
     <div class="mainDiv" id="CreativityTags">
+        <h3 class="step">- étape 2 -</h3>
         <div class="mainCategorieTitle">
             <img src="/ressources/img/tags/1.png" alt="">
             <p class="titleOftag">Créativité</p>
@@ -509,6 +523,7 @@
     </div>
 
     <div class="mainDiv" id="SportTags">
+        <h3 class="step">- étape 2 -</h3>
         <div class="mainCategorieTitle">
             <img src="/ressources/img/tags/2.png" alt="">
             <p class="titleOftag">Sport</p>
@@ -551,6 +566,7 @@
     </div>
 
     <div class="mainDiv" id="DiscoveryTags">
+        <h3 class="step">- étape 2 -</h3>
         <div class="mainCategorieTitle">
             <img src="/ressources/img/tags/1.png" alt="">
             <p class="titleOftag">Découverte & Bien-être</p>
@@ -590,6 +606,7 @@
     </div>
 
     <div class="mainDiv" id="HobbyTags">
+        <h3 class="step">- étape 2 -</h3>
         <div class="mainCategorieTitle">
             <img src="/ressources/img/tags/1.png" alt="">
             <p class="titleOftag">Hobbies</p>
@@ -632,7 +649,8 @@
     </div>
 
     <div class="mainDiv" id="whatBadge">
-        <h2 class="h2EnterAnim">tu le veux comment <span>ton badge</span> ?</h2>
+        <h3 class="step">- étape 3 -</h3>
+        <h2 class="h2EnterAnim">tu le veux comment <span class="degradeH2">ton badge</span> ?</h2>
         <form action="#" method="POST">
             <div id="badgesList">
                 <div class="badgeRadio badgeEntranceLeft">
@@ -669,7 +687,8 @@
     </div>
 
     <div class="mainDiv" id="whatMail">
-        <h2 class="h2EnterAnim">c'est quoi ton <span>mail</span> ?</h2>
+        <h3 class="step">- dernière étape -</h3>
+        <h2 class="h2EnterAnim">c'est quoi ton <span class="degradeH2">mail</span> ?</h2>
         <form>
             <input type="text" placeholder="Mon mail">
             <div class="wthBtn" class="buttonEntrance">
@@ -681,11 +700,20 @@
     </div>
 
     <div class="mainDiv" id="prepareProfile">
-        <h2 class="h2EnterAnim">c’est tout bon, on prépare <span>ton profil</span> !</h2>
+        <h2 class="h2EnterAnim">c’est tout bon, on prépare <span class="degradeH2">ton profil</span> !</h2>
+        <p id="createProfile">profil en création...</p>
         <div id="prgressBarBckgrnd">
             <div id="progressBar" class="progressBarAnim">
             </div>
         </div>
+    </div>
+
+    <div class="mainDiv" id="lastThing">
+        <h2 class="h2EnterAnim">ah une dernière chose...</h2>
+    </div>
+
+    <div class="mainDiv" id="followUs">
+        <h2 class="h2EnterAnim">viens nous follow pour<br>suivre <span class="degradeH2">nos aventures</span> !</h2>
     </div>
 
     <div class="mainDiv" id="comeOn2022">
@@ -927,25 +955,17 @@
                 </svg>
             </div> -->
             <div id="SVGLogo2"><img src="/ressources/img/splitchLogoImg.png" alt=""></div>
-            <h2>arrive dès 2022</h2>
-        </div>
-    </div>
-
-    <div class="mainDiv" id="lastThing">
-        <h2 class="h2EnterAnim">ah une dernière chose...</h2>
-    </div>
-
-    <div class="mainDiv" id="followUs">
-        <h2 class="h2EnterAnim">viens nous follow pour<br>suivre <span>nos aventures</span> !</h2>
-        <div id="followButton">
-            <div class="wthBtn" class="buttonEntrance">
-                <div class="bordBtn">
-                    <a class="innerBtn" href="https://www.instagram.com/splitch_app/">Je follow</a>
+            <h2>arrive dès 2022<br> merci <img id="fingers" src="/ressources/img/fingers.png" alt=""></h2>
+            <div id="followButton">
+                <div class="wthBtn" class="buttonEntrance">
+                    <div class="bordBtn">
+                        <a class="innerBtn" href="https://www.instagram.com/splitch_app/">Je follow</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <h2 id="thank">merci</h2>
     </div>
+
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

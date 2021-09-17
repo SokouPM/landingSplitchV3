@@ -60,6 +60,14 @@ h2 {
     padding: 10px 0;
 }
 
+.step {
+    color: #363A65;
+    font-family: "Tisa Sans Pro";
+    font-size: 40px;
+    position: absolute;
+    top: 1vh;
+}
+
 .none {
     display: none;
 }
@@ -147,7 +155,7 @@ a:visited {
     cursor: pointer;
 }
 
-span {
+.degradeH2 {
     background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
     -webkit-background-clip: text, border-box;
     -webkit-text-fill-color: transparent;
@@ -168,56 +176,76 @@ span {
     position: absolute;
 }
 
-#bille6:hover, #bille7:hover {
-    width: 130px;
-}
-
-#bille4:hover, #bille3:hover, #bille2:hover {
-    width: 90px;
-}
-
-#bille1:hover, #bille5:hover, #bille8:hover {
-    width: 60px;
-}
-
 #bille1 {
     top: 0.5vh;
     right: 4vw;
+    width: 42px;
+}
+
+#bille1:hover {
+    width: 62px;
 }
 
 #bille2 {
     top: 10vh;
     left: 3vw;
+    width: 85px;
+}
+
+#bille2:hover {
+    width: 105px;
 }
 
 #bille3 {
     top: 16vh;
     right: 10vw;
+    width: 79px;
 }
 
 #bille4 {
     top: 23vh;
     right: 30vw;
+    width: 79px;
+}
+
+#bille3:hover, #bille4:hover {
+    width: 99px;
 }
 
 #bille5 {
     top: 40vh;
     left: 18vw;
+    width: 52px;
+}
+
+#bille5:hover, #bille8:hover {
+    width: 72px;
 }
 
 #bille6 {
     top: 42vh;
-    right: 0;
+    right: -2vw;
+    width: 131px;
+}
+
+#bille6:hover {
+    width: 151px;
 }
 
 #bille7 {
     bottom: 18vh;
     left: 8vw;
+    width: 108px;
+}
+
+#bille7:hover {
+    width: 128px;
 }
 
 #bille8 {
     bottom: 0.5vh;
     right: 28vw;
+    width: 52px;
 }
 
 /******************************** weSplitch Page ********************************/
@@ -226,7 +254,8 @@ span {
 
 #phone {
     position: absolute;
-    left: 10vw;
+    width: 283px;
+    left: 13vw;
 }
 
 #newSocialNetwork h2 {
@@ -241,7 +270,7 @@ span {
 
 /******************************** howBasket Page ********************************/
 
-#howBasket {
+/* #howBasket {
     background: url(/ressources/img/basketBckgrnd.png) no-repeat 50% 20%;
     background-size: cover;
 }
@@ -253,7 +282,7 @@ span {
 #basketPlayerImg {
     position: absolute;
     bottom: -25vh;
-}
+} */
 
 /******************************** exchange Page ********************************/
 
@@ -264,6 +293,10 @@ span {
 
 #iconsExchange img {
     margin: 15px;
+}
+
+#iconsExchange img:hover {
+    cursor: pointer;
 }
 
 #iconsExchange img:nth-child(2) {
@@ -296,7 +329,7 @@ button.splide__arrow {
     cursor: pointer;
     position: absolute;
     right: -8%;
-    top: 20%;
+    top: 22%;
     z-index: 10;
 }
 
@@ -304,7 +337,15 @@ button.splide__arrow {
     margin-right: 5vw;
 }
 
-#background2 {
+.slideImg {
+    width: 276px;
+}
+
+#sliderPlus {
+    width: 250px;
+}
+
+/* #background2 {
     position: absolute;
     right: 0;
     top: 10vh;
@@ -316,27 +357,49 @@ button.splide__arrow {
     right: 0;
     top: 50vh;
     z-index: -10;
-}
+} */
 
 /******************************** connect Page ********************************/
+
+#connect h2 {
+    margin-top: 15vh;
+}
 
 .connectImg {
     position: absolute;
 }
 
 #connectImg1 {
-    bottom: 5vh;
-    right: 2vw;
+    top: 2vh;
+    width: 290px;
 }
 
 #connectImg2 {
-    top: 3vh;
-    right: 30vw;
+    top: 8vh;
+    right: 9vw;
+    width: 180px;
 }
 
 #connectImg3 {
     bottom: -1.5vh;
-    left: 1vw;
+    left: 2vw;
+    width: 251px;
+}
+
+#connectImg4 {
+    top: 5vh;
+    left: 6vw;
+    width: 186px;
+}
+
+#connectImg5 {
+    bottom: -1.5vh;
+    right: 6vw;
+    width: 400px;
+}
+
+#btnConnect {
+    margin-top: 40px;
 }
 
 /******************************** beFirst Page ********************************/
@@ -439,7 +502,7 @@ button.splide__arrow {
 /******************************** enterInGame Page ********************************/
 
 #enterInGame .wthBtn {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 /******************************** reserve Page ********************************/
@@ -471,6 +534,11 @@ input[type="text"] {
     margin-right: 20px;
 }
 
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 3pt 2pt rgb(192, 192, 192);
+}
+
 input[type="submit"] {
     border: none;
 }
@@ -492,7 +560,7 @@ input[type="submit"] {
     margin: 40px 40px 0;
 }
 
-.mainCategorie:hover {
+#Creativity:hover {
     cursor: pointer;
     transform: scale(120%);
     transition: all 0.2s;
@@ -500,6 +568,10 @@ input[type="submit"] {
 
 .mainCategorie img, .mainCategorieTitle img {
     margin-bottom: 20px;
+}
+
+.mainCategories img {
+    opacity: 0;
 }
 
 .mainCategorie p, .mainCategorieTitle p {
@@ -517,6 +589,11 @@ input[type="submit"] {
 }
 
 /******************************** tags Pages ********************************/
+
+.mainCategorieTitle img {
+    width: 140px;
+    margin-bottom: 20px;
+}
 
 #tags h2 {
     margin-bottom: 40px;
@@ -555,7 +632,7 @@ input[type="submit"] {
 }
 
 .titleOftag {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .tagLegend {
@@ -583,14 +660,22 @@ input[type="submit"] {
 }
 
 #badgesList img {
-    width: 250px;
+    width: 170px;
     margin: 0 50px;
 }
 
 #badgesList img:hover:not(.selectedBadge), .selectedBadge {
     cursor: pointer;
-    transform: scale(120%);
-    transition: all 0.2s;
+    transform: scale(150%);
+    transition: transform 0.2s;
+}
+.selectedBadge {
+    filter: drop-shadow(0 0 10px rgba(255, 3, 3, 1));
+}
+
+.badgeRadio {
+    width: max-content;
+    height: max-content;
 }
 
 input[type="radio"] {
@@ -607,12 +692,20 @@ input[type="radio"] {
 
 /******************************** prepareProfile Page ********************************/
 
-#prgressBarBckgrnd {
+#createProfile {
+    font-family: "Tisa Sans Pro-light";
+    color: #363A65;
+    font-size: 30px;
     margin-top: 40px;
+}
+
+#prgressBarBckgrnd {
     width: 325px;
     border-radius: 40px;
     background: #e5e5e5;
+    margin-top: 10px;
 }
+
 
 #progressBar {
     width: 10%;
@@ -621,14 +714,20 @@ input[type="radio"] {
     background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
 }
 
-/******************************** followUs Page ********************************/
+/******************************** Come on 2022 Page ********************************/
 
 #followButton {
     margin-top: 40px;
 }
 
 #thank {
-    position: absolute;
-    right: 20vw;
-    bottom: 5vh;
+    margin-top: -10px;
+    font-size: 71px;
+    text-align: center;
+    color: #363A65;
+    font-family: "Tisa Sans Pro";
+}
+
+#fingers {
+    width: 66px;
 }

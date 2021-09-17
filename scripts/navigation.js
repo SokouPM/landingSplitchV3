@@ -22,27 +22,27 @@ $(document).ready(function () {
 
     // Main tag categories buttons
     $('#Creativity').click(function () {
-        currentViewIndex = 14;
+        currentViewIndex++
         toggleViews(currentViewIndex);
     })
-    $('#Sport').click(function () {
-        currentViewIndex = 15;
-        toggleViews(currentViewIndex);
-    })
-    $('#Discovery').click(function () {
-        currentViewIndex = 16;
-        toggleViews(currentViewIndex);
-    })
+    // $('#Sport').click(function () {
+    //     currentViewIndex = 15;
+    //     toggleViews(currentViewIndex);
+    // })
+    // $('#Discovery').click(function () {
+    //     currentViewIndex = 16;
+    //     toggleViews(currentViewIndex);
+    // })
 
-    $('#hobby').click(function () {
-        currentViewIndex = 17;
-        toggleViews(currentViewIndex);
-    })
+    // $('#hobby').click(function () {
+    //     currentViewIndex = 17;
+    //     toggleViews(currentViewIndex);
+    // })
     // Tag page categories buttons
-    $('.tagsButton').click(function () {
-        currentViewIndex = 18;
-        toggleViews(currentViewIndex);
-    })
+    // $('.tagsButton').click(function () {
+    //     currentViewIndex = 18;
+    //     toggleViews(currentViewIndex);
+    // })
 });
 
 //////////////////////////////// Function ////////////////////////////////
@@ -51,7 +51,7 @@ function toggleViews(currentViewIndex) {
     $('.mainDiv').addClass("none");
     $('#previousPageButton').removeClass("none");
     $('#nextPageButton').removeClass("none");
-    switch (currentViewIndex) {
+   switch (currentViewIndex) {
         case 0:
             $('#home').removeClass("none");
             $('#previousPageButton').addClass("none");
@@ -69,24 +69,42 @@ function toggleViews(currentViewIndex) {
             $('#passion').removeClass("none");
             // $('#nextPageButton').addClass("none");
             break;
+        // case 4:
+             $('#howBasket').removeClass("none");
+             // $('#nextPageButton').addClass("none")
+             break; 
         case 4:
-            $('#howBasket').removeClass("none");
-            // $('#nextPageButton').addClass("none")
-            break;
-        case 5:
             $('#exchange').removeClass("none");
             // $('#nextPageButton').addClass("none");
+
+            $('#exchangeImg1').click(function () {
+                $('#gameDegrade').toggleClass("degradeH2");
+            });
+
+            $('#exchangeImg2').click(function () {
+                $('#exchangeDegrade').toggleClass("degradeH2");
+            });
+
+            $('#exchangeImg3').click(function () {
+                $('#purposeDegrade').toggleClass("degradeH2");
+            });
+
             setTimeout(function () {
-                $('#exchangeImg1').removeClass("exchangeImg1EntranceAnim").addClass("popupAnim");
+                $('#exchangeImg2').removeClass("exchangeImg2EntranceAnim").addClass("popupAnim");
                 setTimeout(function () {
-                    $('#exchangeImg2').removeClass("exchangeImg2EntranceAnim").addClass("popupAnim");
+                    $('#exchangeImg3').removeClass("exchangeImg3EntranceAnim").addClass("popupAnim");
                     setTimeout(function () {
-                        $('#exchangeImg3').removeClass("exchangeImg3EntranceAnim").addClass("popupAnim");
+                        $('#exchangeImg1').removeClass("exchangeImg1EntranceAnim").addClass("popupAnim");
+                        setTimeout(function () {
+                            $('#exchangeImg1').removeClass("popupAnim");
+                            $('#exchangeImg2').removeClass("popupAnim");
+                            $('#exchangeImg3').removeClass("popupAnim");
+                        }, 400);
                     }, 200);
                 }, 200);
             }, 1000);
             break;
-        case 6:
+        case 5:
             $('#emotion').removeClass("none");
 
             new Splide('.splide', {
@@ -122,10 +140,10 @@ function toggleViews(currentViewIndex) {
                 }
             }).mount();
             break;
-        case 7:
+        case 6:
             $('#connect').removeClass("none");
             break;
-        case 8:
+        case 7:
             $('#beFirst').removeClass("none");
 
             setTimeout(function () {
@@ -150,26 +168,26 @@ function toggleViews(currentViewIndex) {
             }, 1000);
 
             break;
-        case 9:
+        case 8:
             $('#toGetBadge').removeClass("none");
             // $('#nextPageButton').addClass("none");
             break;
-        case 10:
+        case 9:
             $('#enterInGame').removeClass("none");
             // $('#nextPageButton').addClass("none");
             break;
-        case 11:
+        case 10:
             $('#reserve').removeClass("none");
             // $('#nextPageButton').addClass("none");
-            break;
-        case 12:
+           break;
+        case 11:
             $('#putAside').removeClass("none");
             break;
-        case 13:
+        case 12:
             $('#whatYouThrill').removeClass("none");
             // $('#nextPageButton').addClass("none");
-            break;
-        case 14:
+           break;
+        case 13:
             $('#CreativityTags').removeClass("none");
             // $('#nextPageButton').addClass("none");
             tagAppear(500);
@@ -178,7 +196,7 @@ function toggleViews(currentViewIndex) {
                 $(this).toggleClass('selectedTag');
             });
             break;
-        case 15:
+        case 14:
             $('#SportTags').removeClass("none");
             // $('#nextPageButton').addClass("none");
             tagAppear(500);
@@ -186,8 +204,8 @@ function toggleViews(currentViewIndex) {
             $('.tags').delegate('p', 'click', function () {
                 $(this).toggleClass('selectedTag');
             });
-            break;
-        case 16:
+            break; 
+        case 15:
             $('#DiscoveryTags').removeClass("none");
             // $('#nextPageButton').addClass("none");
             tagAppear(500);
@@ -196,7 +214,7 @@ function toggleViews(currentViewIndex) {
                 $(this).toggleClass('selectedTag');
             });
             break;
-        case 17:
+        case 16:
             $('#HobbyTags').removeClass("none");
             // $('#nextPageButton').addClass("none");
             tagAppear(500);
@@ -205,11 +223,11 @@ function toggleViews(currentViewIndex) {
                 $(this).toggleClass('selectedTag');
             });
             break;
-        case 18:
+        case 17:
             $('#cantWaitToThrill').removeClass("none");
             // $('#nextPageButton').addClass("none");
             break;
-        case 19:
+        case 18: 
             $('#whatBadge').removeClass("none");
             // $('#nextPageButton').addClass("none");
             $('.badgeImg').click(function () {
@@ -217,27 +235,28 @@ function toggleViews(currentViewIndex) {
                 $(this).addClass('selectedBadge');
             })
             break;
-        case 20:
+        case 19:
             $('#goodChoice').removeClass("none");
             // $('#nextPageButton').addClass("none");
             break;
-        case 21:
+        case 20:
             $('#whatMail').removeClass("none");
             // $('#nextPageButton').addClass("none");
             break;
-        case 22:
+        case 21:
             $('#prepareProfile').removeClass("none");
             break;
-        case 23:
-            $('#comeOn2022').removeClass("none");
+        case 22:
+                        $('#lastThing').removeClass("none");
             // $('#nextPageButton').addClass("none");          
             break;
-        case 24:
-            $('#lastThing').removeClass("none");
+        case 23:
+
+                        $('#followUs').removeClass("none");
             // $('#nextPageButton').addClass("none");
             break
-        case 25:
-            $('#followUs').removeClass("none");
+        case 24:
+            $('#comeOn2022').removeClass("none");
             $('#nextPageButton').addClass("none");
             break;
         default:
