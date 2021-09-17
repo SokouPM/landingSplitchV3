@@ -39,6 +39,14 @@
     margin: auto;
 }
 
+@media only screen and (max-width: 775px) {
+    #nextPageButton {
+        right: 10vw;
+        left: auto;
+        margin: 0;
+    }
+}
+
 .mainDiv {
     display: flex;
     flex-direction: column;
@@ -66,6 +74,13 @@ h2 {
     font-size: 40px;
     position: absolute;
     top: 1vh;
+}
+
+@media only screen and (max-width: 700px) {
+    .step {
+        font-size: 20px;
+        top: 5vh;
+    }
 }
 
 .none {
@@ -248,7 +263,100 @@ a:visited {
     width: 52px;
 }
 
+@media only screen and (max-width: 1199px) {
+    #bille1 {
+        top: 0.5vh;
+        right: 4vw;
+    }
+    #bille2 {
+        top: 10vh;
+        left: 0;
+    }
+    #bille3 {
+        top: 16vh;
+        right: 5vw;
+    }
+    #bille4 {
+        top: 23vh;
+        right: 25vw;
+    }
+    #bille5 {
+        top: 40vh;
+        left: 9vw;
+    }
+    #bille6 {
+        top: 42vh;
+        right: -2vw;
+    }
+    #bille7 {
+        bottom: 18vh;
+        left: 3vw;
+    }
+    #bille8 {
+        bottom: 0.5vh;
+        right: 21vw;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    #bille1 {
+        top: 2vh;
+        left: 49vw;
+        width: 22px;
+    }
+    #bille2 {
+        top: 5vh;
+        left: -3vw;
+    }
+    #bille3 {
+        top: 39vh;
+        right: 20vw;
+        width: 22px;
+    }
+    #bille4 {
+        top: -1vh;
+        right: 3vw;
+        width: 52px;
+    }
+    #bille5 {
+        top: 47vh;
+        left: 4vw;
+        width: 30px;
+    }
+    #bille6 {
+        top: 63vh;
+        right: 1vw;
+        width: 42px;
+    }
+    #bille7 {
+        bottom: 3vh;
+        left: -1vw;
+        width: 54px;
+    }
+    #bille8 {
+        bottom: -1vh;
+        right: 9vw;
+        width: 83px;
+    }
+}
+
+@media only screen and (max-width: 739px) {
+    #logo img {
+        width: 190px;
+    }
+    #SVGLogo svg {
+        width: 220px;
+    }
+}
+
 /******************************** weSplitch Page ********************************/
+
+@media only screen and (max-width: 739px) {
+    #weSplitch h2 {
+        font-size: 40px;
+        line-height: 64px;
+    }
+}
 
 /******************************** newSocialNetwork Page ********************************/
 
@@ -262,10 +370,77 @@ a:visited {
     margin-left: 12vw;
 }
 
+@media only screen and (max-width: 1799px) {
+    #newSocialNetwork h2 {
+        margin-left: 20vw;
+    }
+}
+
+@media only screen and (max-width: 1599px) {
+    #newSocialNetwork h2 {
+        margin-left: 33vw;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    #phone {
+        width: 283px;
+        left: 7vw;
+    }
+    #newSocialNetwork h2 {
+        margin-left: 30vw;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    #phone {
+        width: 217px;
+    }
+}
+
+@media only screen and (max-width: 1255px) {
+    #newSocialNetwork h2 {
+        margin-left: 25vw;
+    }
+}
+
+@media only screen and (max-width: 1189px) {
+    #phone {
+        position: unset;
+        margin-bottom: 40px;
+    }
+    #newSocialNetwork h2 {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 889px) {
+    #newSocialNetwork h2 {
+        font-size: 40px;
+        line-height: 64px;
+    }
+}
+
 /******************************** passion Page ********************************/
 
 #ballon {
     margin-bottom: -25px;
+}
+
+@media only screen and (max-width: 969px) {
+    #ballon img {
+        width: 127px;
+    }
+    #ballon {
+        margin-bottom: -20px;
+    }
+    #shadow img {
+        width: 110px;
+    }
+    #passion h2 {
+        font-size: 40px;
+        line-height: 64px;
+    }
 }
 
 /******************************** howBasket Page ********************************/
@@ -309,6 +484,25 @@ a:visited {
 
 #exchangeImg2 {
     width: 241px;
+}
+
+@media only screen and (max-width: 999px) {
+    #exchange h2 {
+        font-size: 40px;
+        line-height: 64px;
+    }
+    #iconsExchange img {
+        margin: 10px;
+    }
+    #exchangeImg3, #exchangeImg1 {
+        width: 85px;
+    }
+    #iconsExchange img:nth-child(2) {
+        margin-top: 30px;
+    }
+    #exchangeImg2 {
+        width: 141px;
+    }
 }
 
 /******************************** emotion Page ********************************/
@@ -359,6 +553,23 @@ button.splide__arrow {
     z-index: -10;
 } */
 
+@media only screen and (max-width: 999px) {
+    #emotion h2 {
+        font-size: 40px;
+        line-height: 64px;
+    }
+    #splide01 {
+        margin-right: none;
+    }
+    #sliderPlus {
+        width: 170px;
+    }
+    button.splide__arrow {
+        right: 1%;
+        top: 33%;
+    }
+}
+
 /******************************** connect Page ********************************/
 
 #connect h2 {
@@ -400,6 +611,122 @@ button.splide__arrow {
 
 #btnConnect {
     margin-top: 40px;
+}
+
+@media only screen and (max-width: 1659px) {
+    #connectImg1 {
+        top: 2vh;
+        width: 240px;
+    }
+    #connectImg2 {
+        top: 8vh;
+        right: 9vw;
+        width: 160px;
+    }
+    #connectImg3 {
+        bottom: -1.5vh;
+        left: 2vw;
+        width: 211px;
+    }
+    #connectImg4 {
+        top: 5vh;
+        left: 6vw;
+        width: 166px;
+    }
+    #connectImg5 {
+        bottom: -1.5vh;
+        right: 6vw;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1369px) {
+    #connectImg1 {
+        top: 2vh;
+        width: 210px;
+    }
+    #connectImg2 {
+        top: 8vh;
+        right: 9vw;
+        width: 130px;
+    }
+    #connectImg3 {
+        bottom: -1.5vh;
+        left: 2vw;
+        width: 181px;
+    }
+    #connectImg4 {
+        top: 5vh;
+        left: 6vw;
+        width: 136px;
+    }
+    #connectImg5 {
+        bottom: -1.5vh;
+        right: 6vw;
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 1069px) {
+    #connectImg1 {
+        top: 2vh;
+        width: 180px;
+    }
+    #connectImg2 {
+        top: 8vh;
+        right: 9vw;
+        width: 100px;
+    }
+    #connectImg3 {
+        bottom: -1.5vh;
+        left: 2vw;
+        width: 151px;
+    }
+    #connectImg4 {
+        top: 5vh;
+        left: 6vw;
+        width: 106px;
+    }
+    #connectImg5 {
+        bottom: -1.5vh;
+        right: 6vw;
+        width: 290px;
+    }
+}
+
+@media only screen and (max-width: 969px) {
+    #connect h2 {
+        font-size: 30px;
+        line-height: 64px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 744px) {
+    #connectImg1 {
+        top: 5vh;
+        right: 2vw;
+        width: 128px;
+    }
+    #connectImg2 {
+        top: 5vh;
+        left: 10vw;
+        right: 0;
+        width: 90px;
+    }
+    #connectImg3 {
+        bottom: -1.5vh;
+        left: 2vw;
+        width: 111px;
+    }
+    #connectImg4 {
+        display: none;
+    }
+    #connectImg5 {
+        bottom: -1.5vh;
+        right: 2vw;
+        width: 204px;
+    }
 }
 
 /******************************** beFirst Page ********************************/
@@ -499,10 +826,93 @@ button.splide__arrow {
     right: 25vw;
 }
 
+@media only screen and (max-width: 1159px) {
+    #bckGrndImgBefirs5, #bckGrndImgBefirs7, #bckGrndImgBefirs17, #bckGrndImgBefirs14, #bckGrndImgBefirs12 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 939px) {
+    #toGetBadge h2, #beFirst h2 {
+        font-size: 30px;
+        line-height: 64px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    #bckGrndImgBefirs3, #bckGrndImgBefirs10 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .beFirstImg {
+        width: 72px;
+    }
+    #bckGrndImgBefirs1 {
+        top: 23vh;
+        left: 11vw
+    }
+    #bckGrndImgBefirs2 {
+        display: none;
+    }
+    #bckGrndImgBefirs4 {
+        top: 3vh;
+        left: -3vw
+    }
+    #bckGrndImgBefirs6 {
+        top: 4vh;
+        right: -3vw;
+    }
+    #bckGrndImgBefirs8 {
+        top: 25vh;
+        right: 1vw;
+    }
+    #bckGrndImgBefirs9 {
+        bottom: -7vh;
+        left: 15vw;
+    }
+    #bckGrndImgBefirs11 {
+        bottom: 18vh;
+        right: auto;
+        left: 6vw;
+    }
+    #bckGrndImgBefirs13 {
+        top: 13vh;
+        left: auto;
+        right: 38vw;
+    }
+    #bckGrndImgBefirs15 {
+        bottom: -3vh;
+        right: -5vw;
+    }
+    #bckGrndImgBefirs16 {
+        bottom: 20vh;
+        right: 8vw;
+    }
+    #bckGrndImgBefirs18 {
+        top: auto;
+        left: auto;
+        right: 40vw;
+        bottom: 15vh;
+    }
+}
+
 /******************************** enterInGame Page ********************************/
 
 #enterInGame .wthBtn {
     margin-top: 50px;
+}
+
+@media only screen and (max-width: 859px) {
+    #enterInGame h2 {
+        font-size: 40px;
+        line-height: 64px;
+    }
+    #enterInGame #bille3, #enterInGame #bille5, #enterInGame #bille6 {
+        display: none;
+    }
 }
 
 /******************************** reserve Page ********************************/
@@ -543,7 +953,38 @@ input[type="submit"] {
     border: none;
 }
 
+@media only screen and (max-width: 989px) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    #reserve .wthBtn, #whatMail .wthBtn {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 813px) {
+    input[type="text"] {
+        width: 70vw;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    #reserve h2 {
+        font-size: 40px;
+        line-height: 64px;
+    }
+}
+
 /******************************** putAside Page ********************************/
+
+@media only screen and (max-width: 879px) {
+    #putAside h2 {
+        font-size: 40px;
+        line-height: 64px;
+    }
+}
 
 /******************************** whatYouThrill Page ********************************/
 
@@ -562,19 +1003,27 @@ input[type="submit"] {
 
 #Creativity:hover {
     cursor: pointer;
-    transform: scale(120%);
-    transition: all 0.2s;
+    transform: scale(130%) !important;
+    transition: all 0.2s !important;
 }
 
 .mainCategorie img, .mainCategorieTitle img {
     margin-bottom: 20px;
 }
 
-.mainCategories img {
+.mainTag {
     opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 40px;
 }
 
-.mainCategorie p, .mainCategorieTitle p {
+.mainTag img {
+    margin-bottom: 20px;
+}
+
+.mainCategorie p, .mainCategorieTitle p, .mainTagName {
     font-family: "Tisa Sans Pro";
     color: #363A65;
     font-size: 30px;
@@ -586,6 +1035,30 @@ input[type="submit"] {
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 999px) {
+    #whatYouThrill h2 {
+        font-size: 40px;
+        line-height: 64px;
+    }
+    .mainTag img {
+        width: 75px;
+    }
+    .mainTagName {
+        font-size: 15px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-width: 673px) {
+    #mainTagCategories {
+        flex-wrap: wrap;
+        width: 350px;
+    }
+    .mainTag {
+        margin: 20px 20px;
+    }
 }
 
 /******************************** tags Pages ********************************/
@@ -645,7 +1118,87 @@ input[type="submit"] {
     bottom: 6vh;
 }
 
+@media only screen and (max-width: 989px) {
+    .mainCategorieTitle img {
+        width: 71px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+   
+    .mainCategorieTitle img {
+        width: 71px;
+        margin-bottom: 10px;
+    }
+    .mainCategorieTitle {
+        margin-bottom: 10px;
+    }
+    .titleOftag {
+        margin-bottom: 0;
+    }
+    .titleOftag, .tagLegend {
+        font-size: 15px !important;
+    }
+    .tags {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .tags p {
+        margin: 8px 10px;
+        padding: 8px 23px;
+        color: #363A65;
+        font-size: 10px;
+    }
+    .tagsButton {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 6vh;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    #SportTags {
+        height: 110vh !important;
+        overflow: auto;
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+    #DiscoveryTags {
+        height: 105vh !important;
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    #DiscoveryTags {
+        height: 110vh !important;
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    #CreativityTags, #DiscoveryTags, #HobbyTags {
+        height: 120vh !important;
+        overflow: auto;
+    }
+     #SportTags {
+        height: 125vh !important;
+    }
+}
+
 /******************************** cantWaitToThrill Page ********************************/
+
+@media only screen and (max-width: 919px) {
+    #cantWaitToThrill h2 {
+        font-size: 30px;
+        line-height: 64px;
+    }
+}
 
 /******************************** whatBadge Page ********************************/
 
@@ -669,8 +1222,9 @@ input[type="submit"] {
     transform: scale(150%);
     transition: transform 0.2s;
 }
+
 .selectedBadge {
-    filter: drop-shadow(0 0 10px rgba(255, 3, 3, 1));
+    filter: drop-shadow(0 0 10px rgb(3, 163, 255));
 }
 
 .badgeRadio {
@@ -686,9 +1240,45 @@ input[type="radio"] {
     margin-top: 50px;
 }
 
+@media only screen and (max-width: 1170px) {
+    #whatBadge h2 {
+        font-size: 30px;
+        line-height: 64px;
+    }
+
+    #badgesList img {
+        width: 100px;
+        margin: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #badgesList {
+        width: 100vw;
+        border: red solid 1px;
+        padding: 50px 0;
+        height: 120px !important;
+        overflow: auto;
+    }
+}
+
 /******************************** goodChoice Page ********************************/
 
+@media only screen and (max-width: 919px) {
+    #goodChoice h2 {
+        font-size: 30px;
+        line-height: 64px;
+    }
+}
+
 /******************************** whatMail Page ********************************/
+
+@media only screen and (max-width: 753px) {
+    #whatMail h2 {
+        font-size: 30px;
+        line-height: 64px;
+    }
+}
 
 /******************************** prepareProfile Page ********************************/
 
@@ -706,7 +1296,6 @@ input[type="radio"] {
     margin-top: 10px;
 }
 
-
 #progressBar {
     width: 10%;
     border-radius: 40px;
@@ -714,7 +1303,55 @@ input[type="radio"] {
     background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
 }
 
+@media only screen and (max-width: 771px) {
+    #prepareProfile h2 {
+        font-size: 30px;
+        line-height: 64px;
+    }
+    #createProfile {
+        font-size: 15px;
+        margin-top: 60px;
+    }
+    #progressBar {
+        height: 23px;
+    }
+    #prgressBarBckgrnd {
+        width: 80%;
+    }
+}
+
+/******************************** lastThing Page ********************************/
+
+@media only screen and (max-width: 889px) {
+    #lastThing h2 {
+        font-size: 30px;
+        line-height: 64px;
+    }
+}
+
+/******************************** followUs Page ********************************/
+
+@media only screen and (max-width: 853px) {
+    #followUs h2 {
+        font-size: 30px;
+        line-height: 64px;
+    }
+}
+
 /******************************** Come on 2022 Page ********************************/
+
+#comeOn2022 #logo img {
+    width: 270px;
+}
+
+#comeOn2022 #SVGLogo2 img {
+    width: 520px;
+}
+
+#comeOn2022 h2 {
+    font-size: 40px;
+    line-height: 43px;
+}
 
 #followButton {
     margin-top: 40px;
@@ -730,4 +1367,20 @@ input[type="radio"] {
 
 #fingers {
     width: 66px;
+}
+
+@media only screen and (max-width: 679px) {
+    #comeOn2022 h2 {
+        font-size: 15px;
+        line-height: 16px;
+    }
+    #comeOn2022 h2 img {
+        width: 25px;
+    }
+    #comeOn2022 #logo img {
+        width: 170px;
+    }
+    #comeOn2022 #SVGLogo2 img {
+        width: 220px;
+    }
 }

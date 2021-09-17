@@ -48,6 +48,22 @@
     }
 }
 
+@media only screen and (max-width: 950px)  {
+
+    .phoneAnimation {
+        animation: phoneAnimation 1s ease 0s 1 normal forwards;
+    }
+    
+    @keyframes phoneAnimation {
+        0% {
+            transform: rotate(-80deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
+
 /******************************** passion Page ********************************/
 
 .h2passionEnterAnim {
@@ -552,7 +568,7 @@ input[type="text"] {
 /******************************** whatYouThrill Page ********************************/
 
 .popupMainTag {
-    animation: popupMainTag 0.5s ease 1s 1 normal forwards;
+    animation: popupMainTag 0.5s ease 0s 1 normal forwards;
 }
 
 @keyframes popupMainTag {
