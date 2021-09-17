@@ -42,227 +42,227 @@ function toggleViews(currentViewIndex) {
     $('.mainDiv').addClass("none");
     $('#previousPageButton').removeClass("none");
     $('#nextPageButton').removeClass("none");
-    /* switch (currentViewIndex) {
-         case 0:
-             $('#home').removeClass("none");
-             $('#previousPageButton').addClass("none");
-             $('#nextPageButton').addClass("none");
-           break;
-         case 1:
-    $('#weSplitch').removeClass("none");
-    // $('#nextPageButton').addClass("none");
-       break;
- case 2:
-     $('#newSocialNetwork').removeClass("none");
-     // $('#nextPageButton').addClass("none");
-     break;
- case 3:
-     $('#passion').removeClass("none");
-     // $('#nextPageButton').addClass("none");
-     break;
-     // case 4:
-     //$('#howBasket').removeClass("none");
-     // $('#nextPageButton').addClass("none")
-     //break;
- case 4:
-     $('#exchange').removeClass("none");
-     // $('#nextPageButton').addClass("none");
+    switch (currentViewIndex) {
+        case 0:
+            $('#home').removeClass("none");
+            $('#previousPageButton').addClass("none");
+            $('#nextPageButton').addClass("none");
+            break;
+        case 1:
+            $('#weSplitch').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 2:
+            $('#newSocialNetwork').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 3:
+            $('#passion').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        // case 4:
+        //$('#howBasket').removeClass("none");
+        // $('#nextPageButton').addClass("none")
+        //break;
+        case 4:
+            $('#exchange').removeClass("none");
+            // $('#nextPageButton').addClass("none");
 
-     $('#exchangeImg1').click(function () {
-         $('#gameDegrade').toggleClass("degradeH2");
-     });
+            $('#exchangeImg1').click(function () {
+                $('#gameDegrade').toggleClass("degradeH2");
+            });
 
-     $('#exchangeImg2').click(function () {
-         $('#exchangeDegrade').toggleClass("degradeH2");
-     });
+            $('#exchangeImg2').click(function () {
+                $('#exchangeDegrade').toggleClass("degradeH2");
+            });
 
-     $('#exchangeImg3').click(function () {
-         $('#purposeDegrade').toggleClass("degradeH2");
-     });
+            $('#exchangeImg3').click(function () {
+                $('#purposeDegrade').toggleClass("degradeH2");
+            });
 
-     setTimeout(function () {
-         $('#exchangeImg2').removeClass("exchangeImg2EntranceAnim").addClass("popupAnim");
-         setTimeout(function () {
-             $('#exchangeImg3').removeClass("exchangeImg3EntranceAnim").addClass("popupAnim");
-             setTimeout(function () {
-                 $('#exchangeImg1').removeClass("exchangeImg1EntranceAnim").addClass("popupAnim");
-                 setTimeout(function () {
-                     $('#exchangeImg1').removeClass("popupAnim");
-                     $('#exchangeImg2').removeClass("popupAnim");
-                     $('#exchangeImg3').removeClass("popupAnim");
-                 }, 400);
-             }, 200);
-         }, 200);
-     }, 1000);
-    break;
- case 5:
-     $('#emotion').removeClass("none");
+            setTimeout(function () {
+                $('#exchangeImg2').removeClass("exchangeImg2EntranceAnim").addClass("popupAnim");
+                setTimeout(function () {
+                    $('#exchangeImg3').removeClass("exchangeImg3EntranceAnim").addClass("popupAnim");
+                    setTimeout(function () {
+                        $('#exchangeImg1').removeClass("exchangeImg1EntranceAnim").addClass("popupAnim");
+                        setTimeout(function () {
+                            $('#exchangeImg1').removeClass("popupAnim");
+                            $('#exchangeImg2').removeClass("popupAnim");
+                            $('#exchangeImg3').removeClass("popupAnim");
+                        }, 400);
+                    }, 200);
+                }, 200);
+            }, 1000);
+            break;
+        case 5:
+            $('#emotion').removeClass("none");
 
-     new Splide('.splide', {
-         type: 'loop',
-         perPage: 5,
-         perMove: 1,
-         gap: 20,
-         width: '85%',
-         autoplay: true,
-         interval: 1500,
-         pagination: false,
-         trimSpace: true,
-         classes: {
-             arrows: 'splide__arrows',
-             arrow: 'splide__arrow',
-             next: 'nextPlus',
-         },
-         breakpoints: {
-             '1600': {
-                 perPage: 4,
-             },
-             '1300': {
-                 perPage: 3,
-             },
-             '965': {
-                 perPage: 2,
-                 width: '100%'
-             },
-             '620': {
-                 perPage: 1,
-             }
-         }
-     }).mount();
-     break;
- case 6:
-    $('#connect').removeClass("none");
-    break;
-case 7: 
-    $('#beFirst').removeClass("none");
+            new Splide('.splide', {
+                type: 'loop',
+                perPage: 5,
+                perMove: 1,
+                gap: 20,
+                width: '85%',
+                autoplay: true,
+                interval: 1500,
+                pagination: false,
+                trimSpace: true,
+                classes: {
+                    arrows: 'splide__arrows',
+                    arrow: 'splide__arrow',
+                    next: 'nextPlus',
+                },
+                breakpoints: {
+                    '1600': {
+                        perPage: 4,
+                    },
+                    '1300': {
+                        perPage: 3,
+                    },
+                    '965': {
+                        perPage: 2,
+                        width: '100%'
+                    },
+                    '620': {
+                        perPage: 1,
+                    }
+                }
+            }).mount();
+            break;
+        case 6:
+            $('#connect').removeClass("none");
+            break;
+        case 7:
+            $('#beFirst').removeClass("none");
 
-    setTimeout(function () {
-        $('#bckGrndImgBefirs1').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim1');
-        $('#bckGrndImgBefirs2').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim2');
-        $('#bckGrndImgBefirs3').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim4');
-        $('#bckGrndImgBefirs4').removeClass('imgBefirstEnterTop').addClass('imgBefirstAnim3');
-        $('#bckGrndImgBefirs5').removeClass('imgBefirstEnterTop').addClass('imgBefirstAnim4');
-        $('#bckGrndImgBefirs6').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim2');
-        $('#bckGrndImgBefirs7').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim1');
-        $('#bckGrndImgBefirs8').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim3');
-        $('#bckGrndImgBefirs9').removeClass('imgBefirstEnterBottomLeft').addClass('imgBefirstAnim3');
-        $('#bckGrndImgBefirs10').removeClass('imgBefirstEnterBottomLeft').addClass('imgBefirstAnim4');
-        $('#bckGrndImgBefirs11').removeClass('imgBefirstEnterBottomLeft').addClass('imgBefirstAnim1');
-        $('#bckGrndImgBefirs12').removeClass('imgBefirstEnterBottom').addClass('imgBefirstAnim4');
-        $('#bckGrndImgBefirs13').removeClass('imgBefirstEnterBottom').addClass('imgBefirstAnim2');
-        $('#bckGrndImgBefirs14').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim3');
-        $('#bckGrndImgBefirs15').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim2');
-        $('#bckGrndImgBefirs16').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim1');
-        $('#bckGrndImgBefirs17').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim1');
-        $('#bckGrndImgBefirs18').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim2');
-    }, 1000);
+            setTimeout(function () {
+                $('#bckGrndImgBefirs1').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim1');
+                $('#bckGrndImgBefirs2').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim2');
+                $('#bckGrndImgBefirs3').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim4');
+                $('#bckGrndImgBefirs4').removeClass('imgBefirstEnterTop').addClass('imgBefirstAnim3');
+                $('#bckGrndImgBefirs5').removeClass('imgBefirstEnterTop').addClass('imgBefirstAnim4');
+                $('#bckGrndImgBefirs6').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim2');
+                $('#bckGrndImgBefirs7').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim1');
+                $('#bckGrndImgBefirs8').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim3');
+                $('#bckGrndImgBefirs9').removeClass('imgBefirstEnterBottomLeft').addClass('imgBefirstAnim3');
+                $('#bckGrndImgBefirs10').removeClass('imgBefirstEnterBottomLeft').addClass('imgBefirstAnim4');
+                $('#bckGrndImgBefirs11').removeClass('imgBefirstEnterBottomLeft').addClass('imgBefirstAnim1');
+                $('#bckGrndImgBefirs12').removeClass('imgBefirstEnterBottom').addClass('imgBefirstAnim4');
+                $('#bckGrndImgBefirs13').removeClass('imgBefirstEnterBottom').addClass('imgBefirstAnim2');
+                $('#bckGrndImgBefirs14').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim3');
+                $('#bckGrndImgBefirs15').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim2');
+                $('#bckGrndImgBefirs16').removeClass('imgBefirstEnterBottomRight').addClass('imgBefirstAnim1');
+                $('#bckGrndImgBefirs17').removeClass('imgBefirstEnterTopLeft').addClass('imgBefirstAnim1');
+                $('#bckGrndImgBefirs18').removeClass('imgBefirstEnterTopRight').addClass('imgBefirstAnim2');
+            }, 1000);
 
-     break;
-case 8:
-    $('#toGetBadge').removeClass("none");
-    // $('#nextPageButton').addClass("none");
-   break;
-case 9:
-    $('#enterInGame').removeClass("none");
-    // $('#nextPageButton').addClass("none");
-     break;
-case 10:
-    $('#reserve').removeClass("none");
-    // $('#nextPageButton').addClass("none");
-     break; 
-case 11:
-    $('#putAside').removeClass("none");
-      break;
-  case 12:
-      $('#whatYouThrill').removeClass("none");
-      setTimeout(function () {
-          $('#Creativity').addClass("popupMainTag");
-          setTimeout(function () {
-              $('#Sport').addClass("popupMainTag");
-              setTimeout(function () {
-                  $('#Discovery').addClass("popupMainTag");
-                  setTimeout(function () {
-                      $('#hobby').addClass("popupMainTag");
-                  }, 250);
-              }, 250);
-          }, 250);
-      }, 1000);
-      // $('#nextPageButton').addClass("none");
-     break;
-  case 13:
-      $('#CreativityTags').removeClass("none");
-      // $('#nextPageButton').addClass("none");
-      tagAppear(500);
-  
-      $('.tags').delegate('p', 'click', function () {
-          $(this).toggleClass('selectedTag');
-      });
-      break;
-  case 14:
-      $('#SportTags').removeClass("none");
-      // $('#nextPageButton').addClass("none");
-      tagAppear(500);
-  
-      $('.tags').delegate('p', 'click', function () {
-          $(this).toggleClass('selectedTag');
-      });
-      break;
-  case 15:
-      $('#DiscoveryTags').removeClass("none");
-      // $('#nextPageButton').addClass("none");
-      tagAppear(500);
-  
-      $('.tags').delegate('p', 'click', function () {
-          $(this).toggleClass('selectedTag');
-      });
-       break;
-  case 16:
-      $('#HobbyTags').removeClass("none");
-      // $('#nextPageButton').addClass("none");
-      tagAppear(500);
-  
-      $('.tags').delegate('p', 'click', function () {
-          $(this).toggleClass('selectedTag');
-      });
-      break;
-  case 17:
-    $('#cantWaitToThrill').removeClass("none");
-    // $('#nextPageButton').addClass("none");
-       break;
-   case 18:*/
-       $('#whatBadge').removeClass("none");
-       // $('#nextPageButton').addClass("none");
-       $('.badgeImg').click(function () {
-           $('.badgeImg').removeClass('selectedBadge');
-           $(this).addClass('selectedBadge');
-       })
-       /*break;
-   case 19:
-       $('#goodChoice').removeClass("none");
-       // $('#nextPageButton').addClass("none");
-       break;
-   case 20:
-       $('#whatMail').removeClass("none");
-       // $('#nextPageButton').addClass("none");
-       break;
-   case 21:
-       $('#prepareProfile').removeClass("none");
-       break;
-   case 22:
-       $('#lastThing').removeClass("none");
-       // $('#nextPageButton').addClass("none");          
-       break;
-   case 23:
-       $('#followUs').removeClass("none");
-       // $('#nextPageButton').addClass("none");
-       break
-   case 24:
-       $('#comeOn2022').removeClass("none");
-       $('#nextPageButton').addClass("none");
-    break;
-   default:
-       break;
-   }*/
+            break;
+        case 8:
+            $('#toGetBadge').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 9:
+            $('#enterInGame').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 10:
+            $('#reserve').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 11:
+            $('#putAside').removeClass("none");
+            break;
+        case 12:
+            $('#whatYouThrill').removeClass("none");
+            setTimeout(function () {
+                $('#Creativity').addClass("popupMainTag");
+                setTimeout(function () {
+                    $('#Sport').addClass("popupMainTag");
+                    setTimeout(function () {
+                        $('#Discovery').addClass("popupMainTag");
+                        setTimeout(function () {
+                            $('#hobby').addClass("popupMainTag");
+                        }, 250);
+                    }, 250);
+                }, 250);
+            }, 1000);
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 13:
+            $('#CreativityTags').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            tagAppear(500);
+
+            $('.tags').delegate('p', 'click', function () {
+                $(this).toggleClass('selectedTag');
+            });
+            break;
+        case 14:
+            $('#SportTags').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            tagAppear(500);
+
+            $('.tags').delegate('p', 'click', function () {
+                $(this).toggleClass('selectedTag');
+            });
+            break;
+        case 15:
+            $('#DiscoveryTags').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            tagAppear(500);
+
+            $('.tags').delegate('p', 'click', function () {
+                $(this).toggleClass('selectedTag');
+            });
+            break;
+        case 16:
+            $('#HobbyTags').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            tagAppear(500);
+
+            $('.tags').delegate('p', 'click', function () {
+                $(this).toggleClass('selectedTag');
+            });
+            break;
+        case 17:
+            $('#cantWaitToThrill').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 18:
+            $('#whatBadge').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            $('.badgeImg').click(function () {
+                $('.badgeImg').removeClass('selectedBadge');
+                $(this).addClass('selectedBadge');
+            })
+            break;
+        case 19:
+            $('#goodChoice').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 20:
+            $('#whatMail').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break;
+        case 21:
+            $('#prepareProfile').removeClass("none");
+            break;
+        case 22:
+            $('#lastThing').removeClass("none");
+            // $('#nextPageButton').addClass("none");          
+            break;
+        case 23:
+            $('#followUs').removeClass("none");
+            // $('#nextPageButton').addClass("none");
+            break
+        case 24:
+            $('#comeOn2022').removeClass("none");
+            $('#nextPageButton').addClass("none");
+            break;
+        default:
+            break;
+    }
 }
 
 function tagAppear(time) {
@@ -338,8 +338,10 @@ function textChangeResponsive() {
 
     if (window.screen.width < 525) {
         $('#putAside>h2').html('ok, on te<br> le met de côté !');
+        $('#whatBadge>h2').html('tu le veux comment<br> <span class="degradeH2">ton badge</span> ?');
     } else {
         $('#putAside>h2').html('ok, on te le met de côté !');
+        $('#whatBadge>h2').html('tu le veux comment <span class="degradeH2">ton badge</span> ?');
     }
 
     if (window.screen.width < 471) {
@@ -354,7 +356,7 @@ function textChangeResponsive() {
         $('#beFirst>h2').html('fais partie<br> des <span class="degradeH2">1 500 premiers</span> inscrits');
     }
 
-    
+
     if (window.screen.width < 433) {
         $('#lastThing>h2').html('ah, une<br> dernière chose...');
     } else {
@@ -366,7 +368,7 @@ function textChangeResponsive() {
     } else {
         $('#reserve>h2').html('réserve ton <span class="degradeH2">pseudo</span>');
     }
-    
+
     if (window.screen.width < 375) {
         $('#followUs>h2').html('viens nous follow<br> pour suivre<br> <span class="degradeH2">l\'aventure</span> !');
     } else {
