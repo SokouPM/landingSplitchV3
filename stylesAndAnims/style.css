@@ -120,11 +120,11 @@ a:visited {
     z-index: -1;
     margin: -5px;
     border-radius: inherit;
-    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
 }
 
 .innerBtn {
-    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
     -webkit-background-clip: text, border-box;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
@@ -137,10 +137,10 @@ a:visited {
 }
 
 .wthBtn:hover, .innerBtn:hover, .selectedTag {
-    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
     -webkit-background-clip: initial;
     -webkit-text-fill-color: white;
-    box-shadow: none;
+    /* box-shadow: none; */
 }
 
 .innerBtn:hover {
@@ -148,7 +148,7 @@ a:visited {
 }
 
 span {
-    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
     -webkit-background-clip: text, border-box;
     -webkit-text-fill-color: transparent;
 }
@@ -184,7 +184,7 @@ span {
 }
 
 #bille4 {
-    top: 33vh;
+    top: 23vh;
     right: 30vw;
 }
 
@@ -257,6 +257,15 @@ span {
 #iconsExchange img:nth-child(2) {
     margin-top: 70px;
 }
+
+#exchangeImg3, #exchangeImg1 {
+    width: 165px;
+}
+
+#exchangeImg2 {
+    width: 241px;
+}
+
 
 /******************************** emotion Page ********************************/
 
@@ -528,7 +537,7 @@ input[type="submit"] {
 }
 
 .tags p:hover, .selectedTag {
-    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
     -webkit-background-clip: initial;
     -webkit-text-fill-color: white;
     box-shadow: none;
@@ -598,7 +607,7 @@ input[type="radio"] {
     width: 10%;
     border-radius: 40px;
     height: 39px;
-    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
 }
 
 /******************************** followUs Page ********************************/
