@@ -168,6 +168,18 @@ span {
     position: absolute;
 }
 
+#bille6:hover, #bille7:hover {
+    width: 130px;
+}
+
+#bille4:hover, #bille3:hover, #bille2:hover {
+    width: 90px;
+}
+
+#bille1:hover, #bille5:hover, #bille8:hover {
+    width: 60px;
+}
+
 #bille1 {
     top: 0.5vh;
     right: 4vw;
@@ -265,7 +277,6 @@ span {
 #exchangeImg2 {
     width: 241px;
 }
-
 
 /******************************** emotion Page ********************************/
 
