@@ -8,6 +8,10 @@
     src: url('/ressources/fonts/TisaSansPro-Light.ttf');
 }
 
+html, body {
+    overscroll-behavior-y: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -149,7 +153,9 @@ a:visited {
 .innerBtn {
     background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
     -webkit-background-clip: text, border-box;
+    background-clip: text, border-box;
     -webkit-text-fill-color: transparent;
+    color: transparent;
     font-weight: 800;
     font-size: 20px;
     padding-left: 30px;
@@ -159,7 +165,7 @@ a:visited {
     text-decoration: none !important;
 }
 
-.wthBtn:hover, .innerBtn:hover, .selectedTag {
+.innerBtn:hover, .selectedTag {
     background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
     -webkit-background-clip: initial;
     -webkit-text-fill-color: white;
@@ -170,7 +176,7 @@ a:visited {
     cursor: pointer;
 }
 
-.degradeH2 {
+.degradeH2, .degradeH2Imp {
     background: linear-gradient(to right, #f900b5, #8600e6, #3d52ee, #00dbff);
     -webkit-background-clip: text, border-box;
     -webkit-text-fill-color: transparent;
@@ -570,6 +576,16 @@ button.splide__arrow {
     }
 }
 
+@media only screen and (max-width: 460px) {
+    #sliderPlus {
+        width: 130px;
+    }
+    button.splide__arrow {
+        right: -10%;
+        top: 36%;
+    }
+}
+
 /******************************** connect Page ********************************/
 
 #connect h2 {
@@ -696,7 +712,7 @@ button.splide__arrow {
 
 @media only screen and (max-width: 969px) {
     #connect h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 64px;
         margin-top: 0;
     }
@@ -710,7 +726,7 @@ button.splide__arrow {
     }
     #connectImg2 {
         top: 5vh;
-        left: 10vw;
+        left: 27vw;
         right: 0;
         width: 90px;
     }
@@ -834,7 +850,7 @@ button.splide__arrow {
 
 @media only screen and (max-width: 939px) {
     #toGetBadge h2, #beFirst h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 64px;
         margin-top: 0;
     }
@@ -931,6 +947,8 @@ form {
 input[type="text"] {
     border: none;
     background: #FFFFFF;
+    -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(30px);
     border-radius: 15px;
@@ -946,6 +964,8 @@ input[type="text"] {
 
 input[type="text"]:focus {
     outline: none;
+    -webkit-box-shadow: 0 0 3pt 2pt rgb(192, 192, 192);
+    -moz-box-shadow: 0 0 3pt 2pt rgb(192, 192, 192);
     box-shadow: 0 0 3pt 2pt rgb(192, 192, 192);
 }
 
@@ -1003,8 +1023,7 @@ input[type="submit"] {
 
 #Creativity:hover {
     cursor: pointer;
-    transform: scale(130%) !important;
-    transition: all 0.2s !important;
+    /* transform: scale(140%) !important; */
 }
 
 .mainCategorie img, .mainCategorieTitle img {
@@ -1020,6 +1039,7 @@ input[type="submit"] {
 }
 
 .mainTag img {
+    width: 168px;
     margin-bottom: 20px;
 }
 
@@ -1043,11 +1063,11 @@ input[type="submit"] {
         line-height: 64px;
     }
     .mainTag img {
-        width: 75px;
+        width: 100px;
     }
     .mainTagName {
-        font-size: 15px;
-        line-height: 16px;
+        font-size: 20px;
+        line-height: 23px;
     }
 }
 
@@ -1126,7 +1146,6 @@ input[type="submit"] {
 }
 
 @media only screen and (max-width: 775px) {
-   
     .mainCategorieTitle img {
         width: 71px;
         margin-bottom: 10px;
@@ -1158,14 +1177,12 @@ input[type="submit"] {
     }
 }
 
-
 @media only screen and (max-width: 400px) {
     #SportTags {
         height: 110vh !important;
         overflow: auto;
     }
 }
-
 
 @media only screen and (max-width: 380px) {
     #DiscoveryTags {
@@ -1186,7 +1203,7 @@ input[type="submit"] {
         height: 120vh !important;
         overflow: auto;
     }
-     #SportTags {
+    #SportTags {
         height: 125vh !important;
     }
 }
@@ -1195,7 +1212,7 @@ input[type="submit"] {
 
 @media only screen and (max-width: 919px) {
     #cantWaitToThrill h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 64px;
     }
 }
@@ -1219,7 +1236,12 @@ input[type="submit"] {
 
 #badgesList img:hover:not(.selectedBadge), .selectedBadge {
     cursor: pointer;
+    -ms-transform: scale(150%);
+    -moz-transform: scale(150%);
+    -webkit-transform: scale(150%);
     transform: scale(150%);
+    -moz-transition: transform 0.2s;
+    -webkit-transition: transform 0.2s;
     transition: transform 0.2s;
 }
 
@@ -1242,10 +1264,9 @@ input[type="radio"] {
 
 @media only screen and (max-width: 1170px) {
     #whatBadge h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 64px;
     }
-
     #badgesList img {
         width: 100px;
         margin: 0 25px;
@@ -1265,7 +1286,7 @@ input[type="radio"] {
 
 @media only screen and (max-width: 919px) {
     #goodChoice h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 64px;
     }
 }
@@ -1274,7 +1295,7 @@ input[type="radio"] {
 
 @media only screen and (max-width: 753px) {
     #whatMail h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 64px;
     }
 }
@@ -1304,7 +1325,7 @@ input[type="radio"] {
 
 @media only screen and (max-width: 771px) {
     #prepareProfile h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 64px;
     }
     #createProfile {
@@ -1323,7 +1344,7 @@ input[type="radio"] {
 
 @media only screen and (max-width: 889px) {
     #lastThing h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 64px;
     }
 }
@@ -1332,7 +1353,7 @@ input[type="radio"] {
 
 @media only screen and (max-width: 853px) {
     #followUs h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 64px;
     }
 }
@@ -1340,20 +1361,24 @@ input[type="radio"] {
 /******************************** Come on 2022 Page ********************************/
 
 #comeOn2022 #logo img {
-    width: 270px;
+    width: 200px;
 }
 
 #comeOn2022 #SVGLogo2 img {
-    width: 520px;
+    width: 400px;
+}
+
+#titleFingers {
+    position: relative;
 }
 
 #comeOn2022 h2 {
     font-size: 40px;
-    line-height: 43px;
+    line-height: 60px;
 }
 
 #followButton {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #thank {
@@ -1365,16 +1390,21 @@ input[type="radio"] {
 }
 
 #fingers {
+    position: absolute;
     width: 66px;
+    right: 80px;
+    bottom: 12px;
 }
 
 @media only screen and (max-width: 679px) {
     #comeOn2022 h2 {
         font-size: 15px;
-        line-height: 16px;
+        line-height: 25px;
     }
-    #comeOn2022 h2 img {
+    #fingers {
         width: 25px;
+        right: 64px;
+        bottom: 13px;
     }
     #comeOn2022 #logo img {
         width: 170px;

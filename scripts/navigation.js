@@ -46,7 +46,7 @@ function toggleViews(currentViewIndex) {
         case 0:
             $('#home').removeClass("none");
             $('#previousPageButton').addClass("none");
-            $('#nextPageButton').addClass("none");
+            // $('#nextPageButton').addClass("none");
             break;
         case 1:
             $('#weSplitch').removeClass("none");
@@ -68,17 +68,48 @@ function toggleViews(currentViewIndex) {
             $('#exchange').removeClass("none");
             // $('#nextPageButton').addClass("none");
 
+            /////////// Exchange Button event ///////////
+
             $('#exchangeImg1').click(function () {
-                $('#gameDegrade').toggleClass("degradeH2");
+                $('#gameDegrade').toggleClass("degradeH2Imp");
+            });
+
+            $("#exchangeImg1").on({
+                mouseenter: function () {
+                    $('#gameDegrade').addClass("degradeH2");
+                },
+                mouseleave: function () {
+                    $('#gameDegrade').removeClass("degradeH2");
+                }
             });
 
             $('#exchangeImg2').click(function () {
-                $('#exchangeDegrade').toggleClass("degradeH2");
+                $('#exchangeDegrade').toggleClass("degradeH2Imp");
+            });
+
+            $("#exchangeImg2").on({
+                mouseenter: function () {
+                    $('#exchangeDegrade').addClass("degradeH2");
+                },
+                mouseleave: function () {
+                    $('#exchangeDegrade').removeClass("degradeH2");
+                }
             });
 
             $('#exchangeImg3').click(function () {
-                $('#purposeDegrade').toggleClass("degradeH2");
+                $('#purposeDegrade').toggleClass("degradeH2Imp");
             });
+
+            $("#exchangeImg3").on({
+                mouseenter: function () {
+                    $('#purposeDegrade').addClass("degradeH2");
+                },
+                mouseleave: function () {
+                    $('#purposeDegrade').removeClass("degradeH2");
+                }
+            });
+
+            /////////// Exchange animations ///////////
 
             setTimeout(function () {
                 $('#exchangeImg2').removeClass("exchangeImg2EntranceAnim").addClass("popupAnim");
@@ -182,6 +213,7 @@ function toggleViews(currentViewIndex) {
                     setTimeout(function () {
                         $('#Discovery').addClass("popupMainTag");
                         setTimeout(function () {
+                            $('#Creativity').removeClass("popupMainTag").addClass("clickHere");
                             $('#hobby').addClass("popupMainTag");
                         }, 250);
                     }, 250);
@@ -346,8 +378,10 @@ function textChangeResponsive() {
 
     if (window.screen.width < 471) {
         $('#enterInGame>h2').html('je rentre<br> dans <span class="degradeH2">le game</span>');
+        $('#reserve>h2').html('réserve<br> ton <span class="degradeH2">pseudo</span>');
     } else {
         $('#enterInGame>h2').html('je rentre dans <span class="degradeH2">le game</span>');
+        $('#reserve>h2').html('réserve ton <span class="degradeH2">pseudo</span>');
     }
 
     if (window.screen.width < 449) {
@@ -361,12 +395,6 @@ function textChangeResponsive() {
         $('#lastThing>h2').html('ah, une<br> dernière chose...');
     } else {
         $('#lastThing>h2').html('ah, une dernière chose...');
-    }
-
-    if (window.screen.width < 415) {
-        $('#reserve>h2').html('réserve<br> ton <span class="degradeH2">pseudo</span>');
-    } else {
-        $('#reserve>h2').html('réserve ton <span class="degradeH2">pseudo</span>');
     }
 
     if (window.screen.width < 375) {

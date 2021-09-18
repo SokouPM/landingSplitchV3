@@ -280,32 +280,6 @@
     }
 }
 
-.sliderEnter {
-    animation: sliderEnter 1s ease 0s 1 normal forwards;
-}
-
-@keyframes sliderEnter {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.sliderPlusEnter {
-    animation: sliderPlusEnter 1s ease 0s 1 normal forwards;
-}
-
-@keyframes sliderPlusEnter {
-    0% {
-        transform: translateX(250px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
 /******************************** connect Page ********************************/
 
 .connectImgEnterBottomRight {
@@ -583,6 +557,22 @@ input[type="text"] {
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+.clickHere {
+    opacity: 1 !important;
+    animation: clickHere 0.5s ease 0s infinite normal forwards;
+}
+
+@keyframes clickHere {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
     }
 }
 
