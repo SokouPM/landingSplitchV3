@@ -26,10 +26,6 @@ $(document).ready(function () {
         currentViewIndex++
         toggleViews(currentViewIndex);
     })
-
-    $('.tags').delegate('p', 'click', function () {
-        $(this).toggleClass('selectedTag');
-    });
 });
 
 $(window).resize(function () {
@@ -42,11 +38,12 @@ function toggleViews(currentViewIndex) {
     $('.mainDiv').addClass("none");
     $('#previousPageButton').removeClass("none");
     $('#nextPageButton').removeClass("none");
+    $("video").prop('muted', true)
     switch (currentViewIndex) {
         case 0:
             $('#home').removeClass("none");
             $('#previousPageButton').addClass("none");
-            // $('#nextPageButton').addClass("none");
+            $('#nextPageButton').addClass("none");
             break;
         case 1:
             $('#weSplitch').removeClass("none");
@@ -54,6 +51,7 @@ function toggleViews(currentViewIndex) {
             break;
         case 2:
             $('#newSocialNetwork').removeClass("none");
+            $("video").prop('muted', false)
             // $('#nextPageButton').addClass("none");
             break;
         case 3:
@@ -163,6 +161,7 @@ function toggleViews(currentViewIndex) {
             break;
         case 6:
             $('#connect').removeClass("none");
+            $('#nextPageButton').addClass("none");
             break;
         case 7:
             $('#beFirst').removeClass("none");
@@ -195,7 +194,7 @@ function toggleViews(currentViewIndex) {
             break;
         case 9:
             $('#enterInGame').removeClass("none");
-            // $('#nextPageButton').addClass("none");
+            $('#nextPageButton').addClass("none");
             break;
         case 10:
             $('#reserve').removeClass("none");
@@ -206,6 +205,7 @@ function toggleViews(currentViewIndex) {
             break;
         case 12:
             $('#whatYouThrill').removeClass("none");
+            $('#nextPageButton').addClass("none");
             setTimeout(function () {
                 $('#Creativity').addClass("popupMainTag");
                 setTimeout(function () {
@@ -219,41 +219,40 @@ function toggleViews(currentViewIndex) {
                     }, 250);
                 }, 250);
             }, 1000);
-            // $('#nextPageButton').addClass("none");
             break;
         case 13:
             $('#CreativityTags').removeClass("none");
-            // $('#nextPageButton').addClass("none");
+            $('#nextPageButton').addClass("none");
             tagAppear(500);
 
-            $('.tags').delegate('p', 'click', function () {
+            $('.tags').delegate('.creativityTag', 'click', function () {
                 $(this).toggleClass('selectedTag');
             });
             break;
         case 14:
             $('#SportTags').removeClass("none");
-            // $('#nextPageButton').addClass("none");
+            $('#nextPageButton').addClass("none");
             tagAppear(500);
 
-            $('.tags').delegate('p', 'click', function () {
+            $('.tags').delegate('.SportTag', 'click', function () {
                 $(this).toggleClass('selectedTag');
             });
             break;
         case 15:
             $('#DiscoveryTags').removeClass("none");
-            // $('#nextPageButton').addClass("none");
+            $('#nextPageButton').addClass("none");
             tagAppear(500);
 
-            $('.tags').delegate('p', 'click', function () {
+            $('.tags').delegate('.DiscoveryTag', 'click', function () {
                 $(this).toggleClass('selectedTag');
             });
             break;
         case 16:
             $('#HobbyTags').removeClass("none");
-            // $('#nextPageButton').addClass("none");
+            $('#nextPageButton').addClass("none");
             tagAppear(500);
 
-            $('.tags').delegate('p', 'click', function () {
+            $('.tags').delegate('.HobbyTag', 'click', function () {
                 $(this).toggleClass('selectedTag');
             });
             break;
@@ -385,9 +384,13 @@ function textChangeResponsive() {
     }
 
     if (window.screen.width < 449) {
-        $('#beFirst>h2').html('fais partie<br> des <span class="degradeH2">1 500 premiers</span><br> inscrits');
+        $('#beFirst>h2').html('Maintenant<br> à toi de jouer,<br> les <span class="degradeH2">1 500 premiers</span><br> inscrits');
+        $('#toGetBadge>h2').html('obtiendront un<br><span class="degradeH2">badge exclusif</span> sur l’app !');
+
     } else {
-        $('#beFirst>h2').html('fais partie<br> des <span class="degradeH2">1 500 premiers</span> inscrits');
+        $('#beFirst>h2').html('Maintenant<br> à toi de jouer,<br> les <span class="degradeH2">1 500 premiers</span> inscrits');
+        $('#toGetBadge>h2').html('obtiendront un<br><span class="degradeH2">badge exclusif</span><br> sur l’app !');
+
     }
 
 

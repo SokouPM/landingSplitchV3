@@ -26,7 +26,9 @@
         <img class="bille imgBefirstAnim2" id="bille8" src="/ressources/img/billes/8.png" alt="">
         <div>
             <div id="logo">
-                <img src="/ressources/img/Union.png" alt="Splitch logo">
+                <video autoplay muted width="250">
+                    <source src="/ressources/videos/logoAnim.mp4" type="video/mp4">
+                </video>
             </div>
             <div id="SVGLogo">
                 <svg width="664" height="217" viewBox="0 0 664 217" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -273,7 +275,12 @@
     </div>
 
     <div class="mainDiv" id="newSocialNetwork">
-        <img id="phone" class="phoneAnimation" src="/ressources/img/phone.png" alt="">
+        <div id="phoneVideo" class="phoneAnimation">
+            <img id="phoneBorder" src="/ressources/img/phoneBorder.png" alt="">
+            <video id="videoInPhone" loop autoplay>
+                <source src="/ressources/videos/phonevideo.mp4" type="video/mp4">
+            </video>
+        </div>
         <h2 class="h2EnterAnim">le nouveau <span class="degradeH2">réseau social</span></h2>
     </div>
 
@@ -356,16 +363,17 @@
 
         <h2 class="h2EnterAnim"><span class="degradeH2">connecte-toi</span> avec des gens<br> qui te ressemblent.</h2>
         <div id="btnConnect">
-            <!-- <div class="wthBtn" class="buttonEntrance">
+            <div class="wthBtn" class="buttonEntrance">
                 <div class="bordBtn">
-                    <a class="innerBtn">Commencer</a>
+                    <a class="innerBtn">C'est parti !</a>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 
     <div class="mainDiv" id="beFirst">
-        <h2 class="h2EnterAnim">fais partie<br> des <span class="degradeH2">1 500 premiers</span> inscrits</h2>
+        <h2 class="h2EnterAnim">Maintenant<br> à toi de jouer,<br> les <span class="degradeH2">1 500 premiers</span>
+            inscrits</h2>
 
         <img id="bckGrndImgBefirs1" class="beFirstImg imgBefirstEnterTopLeft" src="/ressources/img/beFirstImg/1.png"
             alt="">
@@ -405,7 +413,7 @@
     </div>
 
     <div class="mainDiv" id="toGetBadge">
-        <h2 class="h2EnterAnim">pour obtenir<br>ton <span class="degradeH2">badge exclusif</span> !</h2>
+        <h2 class="h2EnterAnim">obtiendront un<br><span class="degradeH2">badge exclusif</span> sur l’app !</h2>
 
         <img id="bckGrndImgBefirs1" class="beFirstImg imgBefirstAnim1" src="/ressources/img/beFirstImg/1.png" alt="">
         <img id="bckGrndImgBefirs2" class="beFirstImg imgBefirstAnim2" src="/ressources/img/beFirstImg/2.png" alt="">
@@ -498,28 +506,28 @@
             <p class="tagLegend">sélectionne tes tags préférés</p>
         </div>
         <div class="tags">
-            <p class="first">Graphisme</p>
-            <p class="fourth">DIY</p>
-            <p class="second">Instruments</p>
-            <p class="third">Dj</p>
-            <p class="third">Tatouage</p>
-            <p class="fourth">Musique</p>
-            <p class="first">Cuisine</p>
-            <p class="first">Piercing</p>
-            <p class="second">Décoration</p>
-            <p class="second">Concerts</p>
-            <p class="fourth">Poèsie</p>
-            <p class="fourth">Graffity</p>
-            <p class="second">Peinture</p>
-            <p class="third">Couture</p>
-            <p class="first">Mode</p>
-            <p class="fourth">Dessin</p>
-            <p class="fourth">Cinéphile</p>
-            <p class="first">Écriture</p>
-            <p class="third">Théatre</p>
-            <p class="second">Photographie</p>
-            <p class="third">Chant</p>
-            <p class="first">Art</p>
+            <p class="creativityTag first">Graphisme</p>
+            <p class="creativityTag fourth">DIY</p>
+            <p class="creativityTag second">Instruments</p>
+            <p class="creativityTag third">Dj</p>
+            <p class="creativityTag third">Tatouage</p>
+            <p class="creativityTag fourth">Musique</p>
+            <p class="creativityTag first">Cuisine</p>
+            <p class="creativityTag first">Piercing</p>
+            <p class="creativityTag second">Décoration</p>
+            <p class="creativityTag second">Concerts</p>
+            <p class="creativityTag fourth">Poèsie</p>
+            <p class="creativityTag fourth">Graffity</p>
+            <p class="creativityTag second">Peinture</p>
+            <p class="creativityTag third">Couture</p>
+            <p class="creativityTag first">Mode</p>
+            <p class="creativityTag fourth">Dessin</p>
+            <p class="creativityTag fourth">Cinéphile</p>
+            <p class="creativityTag first">Écriture</p>
+            <p class="creativityTag third">Théatre</p>
+            <p class="creativityTag second">Photographie</p>
+            <p class="creativityTag third">Chant</p>
+            <p class="creativityTag first">Art</p>
         </div>
         <div class="tagsButton">
             <div class="wthBtn" class="buttonEntrance">
@@ -538,31 +546,31 @@
             <p class="tagLegend">sélectionne tes tags préférés</p>
         </div>
         <div class="tags">
-            <p class="second">Football</p>
-            <p class="first">sport extrêmes</p>
-            <p class="third">Basketball</p>
-            <p class="second">Sport en équipe</p>
-            <p class="first">Sport solo</p>
-            <p class="fourth">Handball</p>
-            <p class="third">Volley</p>
-            <p class="second">Skate</p>
-            <p class="fourth">Tennis</p>
-            <p class="first">Badminton</p>
-            <p class="fourth">Équitation</p>
-            <p class="third">Judo</p>
-            <p class="third">Rugby</p>
-            <p class="second">E-sport</p>
-            <p class="fourth">Voleyball</p>
-            <p class="first">Surf</p>
-            <p class="fourth">Ping-pong</p>
-            <p class="second">Natation</p>
-            <p class="fourth">Athlétisme</p>
-            <p class="third">Boxe</p>
-            <p class="second">Danse</p>
-            <p class="fourth">Golf</p>
-            <p class="first">Pétanque</p>
-            <p class="third">Prognostique sportif</p>
-            <p class="first">Longboard</p>
+            <p class="SportTag second">Football</p>
+            <p class="SportTag first">sport extrêmes</p>
+            <p class="SportTag third">Basketball</p>
+            <p class="SportTag second">Sport en équipe</p>
+            <p class="SportTag first">Sport solo</p>
+            <p class="SportTag fourth">Handball</p>
+            <p class="SportTag third">Volley</p>
+            <p class="SportTag second">Skate</p>
+            <p class="SportTag fourth">Tennis</p>
+            <p class="SportTag first">Badminton</p>
+            <p class="SportTag fourth">Équitation</p>
+            <p class="SportTag third">Judo</p>
+            <p class="SportTag third">Rugby</p>
+            <p class="SportTag second">E-sport</p>
+            <p class="SportTag fourth">Voleyball</p>
+            <p class="SportTag first">Surf</p>
+            <p class="SportTag fourth">Ping-pong</p>
+            <p class="SportTag second">Natation</p>
+            <p class="SportTag fourth">Athlétisme</p>
+            <p class="SportTag third">Boxe</p>
+            <p class="SportTag second">Danse</p>
+            <p class="SportTag fourth">Golf</p>
+            <p class="SportTag first">Pétanque</p>
+            <p class="SportTag third">Prognostique sportif</p>
+            <p class="SportTag first">Longboard</p>
         </div>
         <div class="tagsButton">
             <div class="wthBtn" class="buttonEntrance">
@@ -581,28 +589,28 @@
             <p class="tagLegend">sélectionne tes tags préférés</p>
         </div>
         <div class="tags">
-            <p class="first">Motivation</p>
-            <p class="second">Développement personnel</p>
-            <p class="third">Voyage</p>
-            <p class="second">Culture</p>
-            <p class="second">Exposition</p>
-            <p class="third">Jeu de rôle</p>
-            <p class="first">Street food</p>
-            <p class="second">Sorties</p>
-            <p class="third">Big dreamer</p>
-            <p class="fourth">Astrologie</p>
-            <p class="fourth">Spiritualité</p>
-            <p class="first">Yoga</p>
-            <p class="first">Body positive</p>
-            <p class="second">Vegan</p>
-            <p class="fourth">Échange linguistique</p>
-            <p class="third">Festivals</p>
-            <p class="fourth">Bonnes adresses</p>
-            <p class="first">Feminisme</p>
-            <p class="third">Road Trip</p>
-            <p class="second">Paranormal</p>
-            <p class="first">Frisson</p>
-            <p class="fourth">Soirées</p>
+            <p class="DiscoveryTag first">Motivation</p>
+            <p class="DiscoveryTag second">Développement personnel</p>
+            <p class="DiscoveryTag third">Voyage</p>
+            <p class="DiscoveryTag second">Culture</p>
+            <p class="DiscoveryTag second">Exposition</p>
+            <p class="DiscoveryTag third">Jeu de rôle</p>
+            <p class="DiscoveryTag first">Street food</p>
+            <p class="DiscoveryTag second">Sorties</p>
+            <p class="DiscoveryTag third">Big dreamer</p>
+            <p class="DiscoveryTag fourth">Astrologie</p>
+            <p class="DiscoveryTag fourth">Spiritualité</p>
+            <p class="DiscoveryTag first">Yoga</p>
+            <p class="DiscoveryTag first">Body positive</p>
+            <p class="DiscoveryTag second">Vegan</p>
+            <p class="DiscoveryTag fourth">Échange linguistique</p>
+            <p class="DiscoveryTag third">Festivals</p>
+            <p class="DiscoveryTag fourth">Bonnes adresses</p>
+            <p class="DiscoveryTag first">Feminisme</p>
+            <p class="DiscoveryTag third">Road Trip</p>
+            <p class="DiscoveryTag second">Paranormal</p>
+            <p class="DiscoveryTag first">Frisson</p>
+            <p class="DiscoveryTag fourth">Soirées</p>
         </div>
         <div class="tagsButton">
             <div class="wthBtn" class="buttonEntrance">
@@ -621,27 +629,27 @@
             <p class="tagLegend">sélectionne tes tags préférés</p>
         </div>
         <div class="tags">
-            <p class="first">Engagée</p>
-            <p class="third">Planet I care</p>
-            <p class="second">LGBTQ+</p>
-            <p class="fourth">Netflix</p>
-            <p class="first">Manga</p>
-            <p class="fourth">Beauté</p>
-            <p class="second">Histoires drôles</p>
-            <p class="fourth">sneakers addict</p>
-            <p class="third">Challenge</p>
-            <p class="fourth">Mélomane</p>
-            <p class="first">Animaux</p>
-            <p class="second">Lecture</p>
-            <p class="third">Jeux de société</p>
-            <p class="fourth">Jardinage</p>
-            <p class="fourth">Échecs</p>
-            <p class="third">Humour</p>
-            <p class="second">Nouvelles technologies</p>
-            <p class="first">Cosplay</p>
-            <p class="third">Urbex</p>
-            <p class="first">Parkour</p>
-            <p class="second">Animaux</p>
+            <p class="HobbyTag first">Engagée</p>
+            <p class="HobbyTag third">Planet I care</p>
+            <p class="HobbyTag second">LGBTQ+</p>
+            <p class="HobbyTag fourth">Netflix</p>
+            <p class="HobbyTag first">Manga</p>
+            <p class="HobbyTag fourth">Beauté</p>
+            <p class="HobbyTag second">Histoires drôles</p>
+            <p class="HobbyTag fourth">sneakers addict</p>
+            <p class="HobbyTag third">Challenge</p>
+            <p class="HobbyTag fourth">Mélomane</p>
+            <p class="HobbyTag first">Animaux</p>
+            <p class="HobbyTag second">Lecture</p>
+            <p class="HobbyTag third">Jeux de société</p>
+            <p class="HobbyTag fourth">Jardinage</p>
+            <p class="HobbyTag fourth">Échecs</p>
+            <p class="HobbyTag third">Humour</p>
+            <p class="HobbyTag second">Nouvelles technologies</p>
+            <p class="HobbyTag first">Cosplay</p>
+            <p class="HobbyTag third">Urbex</p>
+            <p class="HobbyTag first">Parkour</p>
+            <p class="HobbyTag second">Animaux</p>
         </div>
         <div class="tagsButton">
             <div class="wthBtn" class="buttonEntrance">
@@ -735,7 +743,9 @@
         <img class="bille imgBefirstAnim2" id="bille8" src="/ressources/img/billes/8.png" alt="">
         <div>
             <div id="logo">
-                <img src="/ressources/img/Union.png" alt="Splitch logo">
+                <video autoplay width="250">
+                    <source src="/ressources/videos/logoAnim.mp4" type="video/mp4">
+                </video>
             </div>
 
             <!-- <div id="SVGLogo2">
